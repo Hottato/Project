@@ -1,0 +1,915 @@
+2023-07-20 14:19:58,403 INFO    StreamThr :13780 [internal.py:wandb_internal():86] W&B internal server running at pid: 13780, started at: 2023-07-20 14:19:58.403348
+2023-07-20 14:19:58,404 DEBUG   HandlerThread:13780 [handler.py:handle_request():144] handle_request: status
+2023-07-20 14:19:58,405 INFO    WriterThread:13780 [datastore.py:open_for_write():85] open: C:\Users\31083\Documents\GitHub\Project\CNC_YOLOV8_Segmodel\Code\yolo\wandb\run-20230720_141958-449vuo84\run-449vuo84.wandb
+2023-07-20 14:19:58,407 DEBUG   SenderThread:13780 [sender.py:send():375] send: header
+2023-07-20 14:19:58,443 DEBUG   SenderThread:13780 [sender.py:send():375] send: run
+2023-07-20 14:19:59,274 DEBUG   HandlerThread:13780 [handler.py:handle_request():144] handle_request: check_version
+2023-07-20 14:19:59,276 INFO    SenderThread:13780 [dir_watcher.py:__init__():219] watching files in: C:\Users\31083\Documents\GitHub\Project\CNC_YOLOV8_Segmodel\Code\yolo\wandb\run-20230720_141958-449vuo84\files
+2023-07-20 14:19:59,276 INFO    SenderThread:13780 [sender.py:_start_run_threads():1124] run started: 449vuo84 with start time 1689830398.403348
+2023-07-20 14:19:59,276 DEBUG   SenderThread:13780 [sender.py:send_request():402] send_request: summary_record
+2023-07-20 14:19:59,276 INFO    SenderThread:13780 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-07-20 14:19:59,276 DEBUG   SenderThread:13780 [sender.py:send_request():402] send_request: check_version
+2023-07-20 14:19:59,329 DEBUG   HandlerThread:13780 [handler.py:handle_request():144] handle_request: run_start
+2023-07-20 14:19:59,343 DEBUG   HandlerThread:13780 [system_info.py:__init__():31] System info init
+2023-07-20 14:19:59,343 DEBUG   HandlerThread:13780 [system_info.py:__init__():46] System info init done
+2023-07-20 14:19:59,343 INFO    HandlerThread:13780 [system_monitor.py:start():181] Starting system monitor
+2023-07-20 14:19:59,344 INFO    SystemMonitor:13780 [system_monitor.py:_start():145] Starting system asset monitoring threads
+2023-07-20 14:19:59,344 INFO    HandlerThread:13780 [system_monitor.py:probe():201] Collecting system info
+2023-07-20 14:19:59,348 INFO    SystemMonitor:13780 [interfaces.py:start():190] Started cpu monitoring
+2023-07-20 14:19:59,348 INFO    SystemMonitor:13780 [interfaces.py:start():190] Started disk monitoring
+2023-07-20 14:19:59,349 INFO    SystemMonitor:13780 [interfaces.py:start():190] Started gpu monitoring
+2023-07-20 14:19:59,349 INFO    SystemMonitor:13780 [interfaces.py:start():190] Started memory monitoring
+2023-07-20 14:19:59,355 INFO    SystemMonitor:13780 [interfaces.py:start():190] Started network monitoring
+2023-07-20 14:19:59,370 DEBUG   HandlerThread:13780 [system_info.py:probe():195] Probing system
+2023-07-20 14:19:59,371 DEBUG   HandlerThread:13780 [system_info.py:_probe_git():180] Probing git
+2023-07-20 14:19:59,440 DEBUG   HandlerThread:13780 [system_info.py:_probe_git():188] Probing git done
+2023-07-20 14:19:59,440 DEBUG   HandlerThread:13780 [system_info.py:probe():240] Probing system done
+2023-07-20 14:19:59,440 DEBUG   HandlerThread:13780 [system_monitor.py:probe():210] {'os': 'Windows-10-10.0.19045-SP0', 'python': '3.9.12', 'heartbeatAt': '2023-07-20T05:19:59.370703', 'startedAt': '2023-07-20T05:19:58.394136', 'docker': None, 'cuda': None, 'args': ('task=segment', 'mode=train', 'model=yolov8s-seg.pt', 'data=C:\\Users\\31083\\Documents\\GitHub\\Project\\CNC_YOLOV8_Segmodel\\Code\\yolo\\cnc_box-1/data.yaml', 'epochs=20', 'imgsz=324'), 'state': 'running', 'program': '-m __main__', 'git': {'remote': 'https://github.com/Hottato/Project.git', 'commit': 'e949e9bfc825deb84369d8e39b3b1b8111b2ec01'}, 'email': '135087389+Hottato@users.noreply.github.com', 'root': 'C:/Users/31083/Documents/GitHub/Project', 'host': 'DESKTOP-BRJ8U09', 'username': '31083', 'executable': 'C:\\Users\\31083\\anaconda3\\envs\\test_envs\\python.exe', 'cpu_count': 12, 'cpu_count_logical': 24, 'cpu_freq': {'current': 3793.0, 'min': 0.0, 'max': 3793.0}, 'cpu_freq_per_core': [{'current': 3793.0, 'min': 0.0, 'max': 3793.0}], 'disk': {'total': 232.14550399780273, 'used': 171.62789154052734}, 'gpu': 'NVIDIA GeForce RTX 2070 SUPER', 'gpu_count': 1, 'gpu_devices': [{'name': 'NVIDIA GeForce RTX 2070 SUPER', 'memory_total': 8589934592}], 'memory': {'total': 31.914608001708984}}
+2023-07-20 14:19:59,441 INFO    HandlerThread:13780 [system_monitor.py:probe():211] Finished collecting system info
+2023-07-20 14:19:59,441 INFO    HandlerThread:13780 [system_monitor.py:probe():214] Publishing system info
+2023-07-20 14:19:59,441 DEBUG   HandlerThread:13780 [system_info.py:_save_pip():51] Saving list of pip packages installed into the current environment
+2023-07-20 14:19:59,441 DEBUG   HandlerThread:13780 [system_info.py:_save_pip():67] Saving pip packages done
+2023-07-20 14:19:59,441 DEBUG   HandlerThread:13780 [system_info.py:_save_conda():74] Saving list of conda packages installed into the current environment
+2023-07-20 14:20:00,282 INFO    Thread-17 :13780 [dir_watcher.py:_on_file_created():278] file/dir created: C:\Users\31083\Documents\GitHub\Project\CNC_YOLOV8_Segmodel\Code\yolo\wandb\run-20230720_141958-449vuo84\files\requirements.txt
+2023-07-20 14:20:00,283 INFO    Thread-17 :13780 [dir_watcher.py:_on_file_created():278] file/dir created: C:\Users\31083\Documents\GitHub\Project\CNC_YOLOV8_Segmodel\Code\yolo\wandb\run-20230720_141958-449vuo84\files\wandb-summary.json
+2023-07-20 14:20:00,283 INFO    Thread-17 :13780 [dir_watcher.py:_on_file_created():278] file/dir created: C:\Users\31083\Documents\GitHub\Project\CNC_YOLOV8_Segmodel\Code\yolo\wandb\run-20230720_141958-449vuo84\files\conda-environment.yaml
+2023-07-20 14:20:08,183 DEBUG   HandlerThread:13780 [system_info.py:_save_conda():86] Saving conda packages done
+2023-07-20 14:20:08,183 INFO    HandlerThread:13780 [system_monitor.py:probe():216] Finished publishing system info
+2023-07-20 14:20:08,192 DEBUG   HandlerThread:13780 [handler.py:handle_request():144] handle_request: status_report
+2023-07-20 14:20:08,192 DEBUG   HandlerThread:13780 [handler.py:handle_request():144] handle_request: keepalive
+2023-07-20 14:20:08,193 DEBUG   SenderThread:13780 [sender.py:send():375] send: files
+2023-07-20 14:20:08,193 INFO    SenderThread:13780 [sender.py:_save_file():1378] saving file wandb-metadata.json with policy now
+2023-07-20 14:20:08,198 DEBUG   HandlerThread:13780 [handler.py:handle_request():144] handle_request: stop_status
+2023-07-20 14:20:08,198 DEBUG   SenderThread:13780 [sender.py:send_request():402] send_request: stop_status
+2023-07-20 14:20:08,336 INFO    Thread-17 :13780 [dir_watcher.py:_on_file_modified():295] file/dir modified: C:\Users\31083\Documents\GitHub\Project\CNC_YOLOV8_Segmodel\Code\yolo\wandb\run-20230720_141958-449vuo84\files\conda-environment.yaml
+2023-07-20 14:20:08,336 INFO    Thread-17 :13780 [dir_watcher.py:_on_file_created():278] file/dir created: C:\Users\31083\Documents\GitHub\Project\CNC_YOLOV8_Segmodel\Code\yolo\wandb\run-20230720_141958-449vuo84\files\wandb-metadata.json
+2023-07-20 14:20:08,425 DEBUG   SenderThread:13780 [sender.py:send():375] send: telemetry
+2023-07-20 14:20:08,800 INFO    wandb-upload_0:13780 [upload_job.py:push():137] Uploaded file C:\Users\31083\AppData\Local\Temp\tmpkqsqtynlwandb\qjfss89w-wandb-metadata.json
+2023-07-20 14:20:09,348 INFO    Thread-17 :13780 [dir_watcher.py:_on_file_created():278] file/dir created: C:\Users\31083\Documents\GitHub\Project\CNC_YOLOV8_Segmodel\Code\yolo\wandb\run-20230720_141958-449vuo84\files\output.log
+2023-07-20 14:20:09,729 DEBUG   HandlerThread:13780 [handler.py:handle_request():144] handle_request: status_report
+2023-07-20 14:20:11,365 INFO    Thread-17 :13780 [dir_watcher.py:_on_file_modified():295] file/dir modified: C:\Users\31083\Documents\GitHub\Project\CNC_YOLOV8_Segmodel\Code\yolo\wandb\run-20230720_141958-449vuo84\files\output.log
+2023-07-20 14:20:13,375 INFO    Thread-17 :13780 [dir_watcher.py:_on_file_modified():295] file/dir modified: C:\Users\31083\Documents\GitHub\Project\CNC_YOLOV8_Segmodel\Code\yolo\wandb\run-20230720_141958-449vuo84\files\output.log
+2023-07-20 14:20:15,401 DEBUG   HandlerThread:13780 [handler.py:handle_request():144] handle_request: status_report
+2023-07-20 14:20:17,428 INFO    Thread-17 :13780 [dir_watcher.py:_on_file_modified():295] file/dir modified: C:\Users\31083\Documents\GitHub\Project\CNC_YOLOV8_Segmodel\Code\yolo\wandb\run-20230720_141958-449vuo84\files\output.log
+2023-07-20 14:20:20,499 DEBUG   HandlerThread:13780 [handler.py:handle_request():144] handle_request: status_report
+2023-07-20 14:20:21,464 INFO    Thread-17 :13780 [dir_watcher.py:_on_file_modified():295] file/dir modified: C:\Users\31083\Documents\GitHub\Project\CNC_YOLOV8_Segmodel\Code\yolo\wandb\run-20230720_141958-449vuo84\files\output.log
+2023-07-20 14:20:23,196 DEBUG   HandlerThread:13780 [handler.py:handle_request():144] handle_request: stop_status
+2023-07-20 14:20:23,197 DEBUG   SenderThread:13780 [sender.py:send_request():402] send_request: stop_status
+2023-07-20 14:20:24,497 INFO    Thread-17 :13780 [dir_watcher.py:_on_file_modified():295] file/dir modified: C:\Users\31083\Documents\GitHub\Project\CNC_YOLOV8_Segmodel\Code\yolo\wandb\run-20230720_141958-449vuo84\files\output.log
+2023-07-20 14:20:26,193 DEBUG   HandlerThread:13780 [handler.py:handle_request():144] handle_request: status_report
+2023-07-20 14:20:26,505 INFO    Thread-17 :13780 [dir_watcher.py:_on_file_modified():295] file/dir modified: C:\Users\31083\Documents\GitHub\Project\CNC_YOLOV8_Segmodel\Code\yolo\wandb\run-20230720_141958-449vuo84\files\output.log
+2023-07-20 14:20:30,539 INFO    Thread-17 :13780 [dir_watcher.py:_on_file_modified():295] file/dir modified: C:\Users\31083\Documents\GitHub\Project\CNC_YOLOV8_Segmodel\Code\yolo\wandb\run-20230720_141958-449vuo84\files\output.log
+2023-07-20 14:20:32,044 DEBUG   HandlerThread:13780 [handler.py:handle_request():144] handle_request: status_report
+2023-07-20 14:20:32,527 DEBUG   HandlerThread:13780 [handler.py:handle_request():144] handle_request: partial_history
+2023-07-20 14:20:32,527 DEBUG   HandlerThread:13780 [handler.py:handle_request():144] handle_request: partial_history
+2023-07-20 14:20:32,555 INFO    Thread-17 :13780 [dir_watcher.py:_on_file_modified():295] file/dir modified: C:\Users\31083\Documents\GitHub\Project\CNC_YOLOV8_Segmodel\Code\yolo\wandb\run-20230720_141958-449vuo84\files\config.yaml
+2023-07-20 14:20:33,688 DEBUG   HandlerThread:13780 [handler.py:handle_request():144] handle_request: partial_history
+2023-07-20 14:20:33,689 DEBUG   HandlerThread:13780 [handler.py:handle_request():144] handle_request: partial_history
+2023-07-20 14:20:34,559 INFO    Thread-17 :13780 [dir_watcher.py:_on_file_modified():295] file/dir modified: C:\Users\31083\Documents\GitHub\Project\CNC_YOLOV8_Segmodel\Code\yolo\wandb\run-20230720_141958-449vuo84\files\output.log
+2023-07-20 14:20:37,411 DEBUG   HandlerThread:13780 [handler.py:handle_request():144] handle_request: status_report
+2023-07-20 14:20:38,198 DEBUG   HandlerThread:13780 [handler.py:handle_request():144] handle_request: stop_status
+2023-07-20 14:20:38,198 DEBUG   SenderThread:13780 [sender.py:send_request():402] send_request: stop_status
+2023-07-20 14:20:38,602 INFO    Thread-17 :13780 [dir_watcher.py:_on_file_modified():295] file/dir modified: C:\Users\31083\Documents\GitHub\Project\CNC_YOLOV8_Segmodel\Code\yolo\wandb\run-20230720_141958-449vuo84\files\output.log
+2023-07-20 14:20:42,616 INFO    Thread-17 :13780 [dir_watcher.py:_on_file_modified():295] file/dir modified: C:\Users\31083\Documents\GitHub\Project\CNC_YOLOV8_Segmodel\Code\yolo\wandb\run-20230720_141958-449vuo84\files\output.log
+2023-07-20 14:20:43,317 DEBUG   HandlerThread:13780 [handler.py:handle_request():144] handle_request: status_report
+2023-07-20 14:20:46,660 INFO    Thread-17 :13780 [dir_watcher.py:_on_file_modified():295] file/dir modified: C:\Users\31083\Documents\GitHub\Project\CNC_YOLOV8_Segmodel\Code\yolo\wandb\run-20230720_141958-449vuo84\files\output.log
+2023-07-20 14:20:48,763 DEBUG   HandlerThread:13780 [handler.py:handle_request():144] handle_request: status_report
+2023-07-20 14:20:50,688 INFO    Thread-17 :13780 [dir_watcher.py:_on_file_modified():295] file/dir modified: C:\Users\31083\Documents\GitHub\Project\CNC_YOLOV8_Segmodel\Code\yolo\wandb\run-20230720_141958-449vuo84\files\output.log
+2023-07-20 14:20:52,705 INFO    Thread-17 :13780 [dir_watcher.py:_on_file_modified():295] file/dir modified: C:\Users\31083\Documents\GitHub\Project\CNC_YOLOV8_Segmodel\Code\yolo\wandb\run-20230720_141958-449vuo84\files\output.log
+2023-07-20 14:20:53,202 DEBUG   HandlerThread:13780 [handler.py:handle_request():144] handle_request: stop_status
+2023-07-20 14:20:53,202 DEBUG   SenderThread:13780 [sender.py:send_request():402] send_request: stop_status
+2023-07-20 14:20:54,430 DEBUG   HandlerThread:13780 [handler.py:handle_request():144] handle_request: status_report
+2023-07-20 14:20:54,776 DEBUG   HandlerThread:13780 [handler.py:handle_request():144] handle_request: partial_history
+2023-07-20 14:20:54,779 DEBUG   HandlerThread:13780 [handler.py:handle_request():144] handle_request: partial_history
+2023-07-20 14:20:54,779 DEBUG   SenderThread:13780 [sender.py:send():375] send: history
+2023-07-20 14:20:54,779 DEBUG   SenderThread:13780 [sender.py:send_request():402] send_request: summary_record
+2023-07-20 14:20:54,782 INFO    SenderThread:13780 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-07-20 14:20:55,280 DEBUG   SenderThread:13780 [sender.py:send():375] send: files
+2023-07-20 14:20:55,280 INFO    SenderThread:13780 [sender.py:_save_file():1378] saving file media\images\train_batch0_2_2f9cf6eeac9edb0a1813.jpg with policy now
+2023-07-20 14:20:55,284 DEBUG   SenderThread:13780 [sender.py:send():375] send: files
+2023-07-20 14:20:55,284 INFO    SenderThread:13780 [sender.py:_save_file():1378] saving file media\images\train_batch1_2_371fe78e2c93f3605093.jpg with policy now
+2023-07-20 14:20:55,289 DEBUG   HandlerThread:13780 [handler.py:handle_request():144] handle_request: partial_history
+2023-07-20 14:20:55,290 DEBUG   SenderThread:13780 [sender.py:send():375] send: files
+2023-07-20 14:20:55,290 INFO    SenderThread:13780 [sender.py:_save_file():1378] saving file media\images\train_batch2_2_03cc2718713523cfe43d.jpg with policy now
+2023-07-20 14:20:55,723 INFO    Thread-17 :13780 [dir_watcher.py:_on_file_modified():295] file/dir modified: C:\Users\31083\Documents\GitHub\Project\CNC_YOLOV8_Segmodel\Code\yolo\wandb\run-20230720_141958-449vuo84\files\wandb-summary.json
+2023-07-20 14:20:55,723 INFO    Thread-17 :13780 [dir_watcher.py:_on_file_created():278] file/dir created: C:\Users\31083\Documents\GitHub\Project\CNC_YOLOV8_Segmodel\Code\yolo\wandb\run-20230720_141958-449vuo84\files\media\images\train_batch1_2_371fe78e2c93f3605093.jpg
+2023-07-20 14:20:55,723 INFO    Thread-17 :13780 [dir_watcher.py:_on_file_created():278] file/dir created: C:\Users\31083\Documents\GitHub\Project\CNC_YOLOV8_Segmodel\Code\yolo\wandb\run-20230720_141958-449vuo84\files\media\images\train_batch0_2_2f9cf6eeac9edb0a1813.jpg
+2023-07-20 14:20:55,724 INFO    Thread-17 :13780 [dir_watcher.py:_on_file_created():278] file/dir created: C:\Users\31083\Documents\GitHub\Project\CNC_YOLOV8_Segmodel\Code\yolo\wandb\run-20230720_141958-449vuo84\files\media\images\train_batch2_2_03cc2718713523cfe43d.jpg
+2023-07-20 14:20:55,724 INFO    Thread-17 :13780 [dir_watcher.py:_on_file_created():278] file/dir created: C:\Users\31083\Documents\GitHub\Project\CNC_YOLOV8_Segmodel\Code\yolo\wandb\run-20230720_141958-449vuo84\files\media
+2023-07-20 14:20:55,724 INFO    Thread-17 :13780 [dir_watcher.py:_on_file_created():278] file/dir created: C:\Users\31083\Documents\GitHub\Project\CNC_YOLOV8_Segmodel\Code\yolo\wandb\run-20230720_141958-449vuo84\files\media\images
+2023-07-20 14:20:56,417 DEBUG   HandlerThread:13780 [handler.py:handle_request():144] handle_request: partial_history
+2023-07-20 14:20:56,535 INFO    wandb-upload_1:13780 [upload_job.py:push():137] Uploaded file C:\Users\31083\AppData\Local\Temp\tmpkqsqtynlwandb\u37ngm87-media/images/train_batch1_2_371fe78e2c93f3605093.jpg
+2023-07-20 14:20:56,544 INFO    wandb-upload_0:13780 [upload_job.py:push():137] Uploaded file C:\Users\31083\AppData\Local\Temp\tmpkqsqtynlwandb\1hhi25t3-media/images/train_batch0_2_2f9cf6eeac9edb0a1813.jpg
+2023-07-20 14:20:56,740 INFO    Thread-17 :13780 [dir_watcher.py:_on_file_modified():295] file/dir modified: C:\Users\31083\Documents\GitHub\Project\CNC_YOLOV8_Segmodel\Code\yolo\wandb\run-20230720_141958-449vuo84\files\output.log
+2023-07-20 14:20:56,907 INFO    wandb-upload_2:13780 [upload_job.py:push():137] Uploaded file C:\Users\31083\AppData\Local\Temp\tmpkqsqtynlwandb\dodgpr3o-media/images/train_batch2_2_03cc2718713523cfe43d.jpg
+2023-07-20 14:20:58,758 INFO    Thread-17 :13780 [dir_watcher.py:_on_file_modified():295] file/dir modified: C:\Users\31083\Documents\GitHub\Project\CNC_YOLOV8_Segmodel\Code\yolo\wandb\run-20230720_141958-449vuo84\files\output.log
+2023-07-20 14:20:59,357 DEBUG   SystemMonitor:13780 [system_monitor.py:_start():159] Starting system metrics aggregation loop
+2023-07-20 14:20:59,358 DEBUG   SenderThread:13780 [sender.py:send():375] send: stats
+2023-07-20 14:21:00,078 DEBUG   HandlerThread:13780 [handler.py:handle_request():144] handle_request: status_report
+2023-07-20 14:21:00,781 INFO    Thread-17 :13780 [dir_watcher.py:_on_file_modified():295] file/dir modified: C:\Users\31083\Documents\GitHub\Project\CNC_YOLOV8_Segmodel\Code\yolo\wandb\run-20230720_141958-449vuo84\files\output.log
+2023-07-20 14:21:04,819 INFO    Thread-17 :13780 [dir_watcher.py:_on_file_modified():295] file/dir modified: C:\Users\31083\Documents\GitHub\Project\CNC_YOLOV8_Segmodel\Code\yolo\wandb\run-20230720_141958-449vuo84\files\output.log
+2023-07-20 14:21:05,666 DEBUG   HandlerThread:13780 [handler.py:handle_request():144] handle_request: status_report
+2023-07-20 14:21:08,212 DEBUG   HandlerThread:13780 [handler.py:handle_request():144] handle_request: stop_status
+2023-07-20 14:21:08,212 DEBUG   SenderThread:13780 [sender.py:send_request():402] send_request: stop_status
+2023-07-20 14:21:08,848 INFO    Thread-17 :13780 [dir_watcher.py:_on_file_modified():295] file/dir modified: C:\Users\31083\Documents\GitHub\Project\CNC_YOLOV8_Segmodel\Code\yolo\wandb\run-20230720_141958-449vuo84\files\output.log
+2023-07-20 14:21:10,889 DEBUG   HandlerThread:13780 [handler.py:handle_request():144] handle_request: status_report
+2023-07-20 14:21:12,881 INFO    Thread-17 :13780 [dir_watcher.py:_on_file_modified():295] file/dir modified: C:\Users\31083\Documents\GitHub\Project\CNC_YOLOV8_Segmodel\Code\yolo\wandb\run-20230720_141958-449vuo84\files\output.log
+2023-07-20 14:21:16,548 DEBUG   HandlerThread:13780 [handler.py:handle_request():144] handle_request: status_report
+2023-07-20 14:21:16,815 DEBUG   HandlerThread:13780 [handler.py:handle_request():144] handle_request: partial_history
+2023-07-20 14:21:16,816 DEBUG   HandlerThread:13780 [handler.py:handle_request():144] handle_request: partial_history
+2023-07-20 14:21:16,817 DEBUG   SenderThread:13780 [sender.py:send():375] send: history
+2023-07-20 14:21:16,817 DEBUG   SenderThread:13780 [sender.py:send_request():402] send_request: summary_record
+2023-07-20 14:21:16,818 INFO    SenderThread:13780 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-07-20 14:21:16,899 INFO    Thread-17 :13780 [dir_watcher.py:_on_file_modified():295] file/dir modified: C:\Users\31083\Documents\GitHub\Project\CNC_YOLOV8_Segmodel\Code\yolo\wandb\run-20230720_141958-449vuo84\files\wandb-summary.json
+2023-07-20 14:21:16,900 INFO    Thread-17 :13780 [dir_watcher.py:_on_file_modified():295] file/dir modified: C:\Users\31083\Documents\GitHub\Project\CNC_YOLOV8_Segmodel\Code\yolo\wandb\run-20230720_141958-449vuo84\files\output.log
+2023-07-20 14:21:18,016 DEBUG   HandlerThread:13780 [handler.py:handle_request():144] handle_request: partial_history
+2023-07-20 14:21:18,927 INFO    Thread-17 :13780 [dir_watcher.py:_on_file_modified():295] file/dir modified: C:\Users\31083\Documents\GitHub\Project\CNC_YOLOV8_Segmodel\Code\yolo\wandb\run-20230720_141958-449vuo84\files\output.log
+2023-07-20 14:21:21,579 DEBUG   HandlerThread:13780 [handler.py:handle_request():144] handle_request: status_report
+2023-07-20 14:21:22,957 INFO    Thread-17 :13780 [dir_watcher.py:_on_file_modified():295] file/dir modified: C:\Users\31083\Documents\GitHub\Project\CNC_YOLOV8_Segmodel\Code\yolo\wandb\run-20230720_141958-449vuo84\files\output.log
+2023-07-20 14:21:23,212 DEBUG   HandlerThread:13780 [handler.py:handle_request():144] handle_request: stop_status
+2023-07-20 14:21:23,213 DEBUG   SenderThread:13780 [sender.py:send_request():402] send_request: stop_status
+2023-07-20 14:21:26,974 INFO    Thread-17 :13780 [dir_watcher.py:_on_file_modified():295] file/dir modified: C:\Users\31083\Documents\GitHub\Project\CNC_YOLOV8_Segmodel\Code\yolo\wandb\run-20230720_141958-449vuo84\files\output.log
+2023-07-20 14:21:27,192 DEBUG   HandlerThread:13780 [handler.py:handle_request():144] handle_request: status_report
+2023-07-20 14:21:28,988 INFO    Thread-17 :13780 [dir_watcher.py:_on_file_modified():295] file/dir modified: C:\Users\31083\Documents\GitHub\Project\CNC_YOLOV8_Segmodel\Code\yolo\wandb\run-20230720_141958-449vuo84\files\output.log
+2023-07-20 14:21:29,365 DEBUG   SenderThread:13780 [sender.py:send():375] send: stats
+2023-07-20 14:21:32,387 DEBUG   HandlerThread:13780 [handler.py:handle_request():144] handle_request: status_report
+2023-07-20 14:21:35,035 INFO    Thread-17 :13780 [dir_watcher.py:_on_file_modified():295] file/dir modified: C:\Users\31083\Documents\GitHub\Project\CNC_YOLOV8_Segmodel\Code\yolo\wandb\run-20230720_141958-449vuo84\files\output.log
+2023-07-20 14:21:37,048 INFO    Thread-17 :13780 [dir_watcher.py:_on_file_modified():295] file/dir modified: C:\Users\31083\Documents\GitHub\Project\CNC_YOLOV8_Segmodel\Code\yolo\wandb\run-20230720_141958-449vuo84\files\output.log
+2023-07-20 14:21:38,063 DEBUG   HandlerThread:13780 [handler.py:handle_request():144] handle_request: status_report
+2023-07-20 14:21:38,219 DEBUG   HandlerThread:13780 [handler.py:handle_request():144] handle_request: stop_status
+2023-07-20 14:21:38,220 DEBUG   SenderThread:13780 [sender.py:send_request():402] send_request: stop_status
+2023-07-20 14:21:38,387 DEBUG   HandlerThread:13780 [handler.py:handle_request():144] handle_request: partial_history
+2023-07-20 14:21:38,387 DEBUG   HandlerThread:13780 [handler.py:handle_request():144] handle_request: partial_history
+2023-07-20 14:21:38,428 DEBUG   SenderThread:13780 [sender.py:send():375] send: history
+2023-07-20 14:21:38,429 DEBUG   SenderThread:13780 [sender.py:send_request():402] send_request: summary_record
+2023-07-20 14:21:38,430 INFO    SenderThread:13780 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-07-20 14:21:39,076 INFO    Thread-17 :13780 [dir_watcher.py:_on_file_modified():295] file/dir modified: C:\Users\31083\Documents\GitHub\Project\CNC_YOLOV8_Segmodel\Code\yolo\wandb\run-20230720_141958-449vuo84\files\wandb-summary.json
+2023-07-20 14:21:39,076 INFO    Thread-17 :13780 [dir_watcher.py:_on_file_modified():295] file/dir modified: C:\Users\31083\Documents\GitHub\Project\CNC_YOLOV8_Segmodel\Code\yolo\wandb\run-20230720_141958-449vuo84\files\output.log
+2023-07-20 14:21:39,401 DEBUG   HandlerThread:13780 [handler.py:handle_request():144] handle_request: partial_history
+2023-07-20 14:21:41,084 INFO    Thread-17 :13780 [dir_watcher.py:_on_file_modified():295] file/dir modified: C:\Users\31083\Documents\GitHub\Project\CNC_YOLOV8_Segmodel\Code\yolo\wandb\run-20230720_141958-449vuo84\files\output.log
+2023-07-20 14:21:43,079 DEBUG   HandlerThread:13780 [handler.py:handle_request():144] handle_request: status_report
+2023-07-20 14:21:45,117 INFO    Thread-17 :13780 [dir_watcher.py:_on_file_modified():295] file/dir modified: C:\Users\31083\Documents\GitHub\Project\CNC_YOLOV8_Segmodel\Code\yolo\wandb\run-20230720_141958-449vuo84\files\output.log
+2023-07-20 14:21:47,119 INFO    Thread-17 :13780 [dir_watcher.py:_on_file_modified():295] file/dir modified: C:\Users\31083\Documents\GitHub\Project\CNC_YOLOV8_Segmodel\Code\yolo\wandb\run-20230720_141958-449vuo84\files\output.log
+2023-07-20 14:21:48,615 DEBUG   HandlerThread:13780 [handler.py:handle_request():144] handle_request: status_report
+2023-07-20 14:21:51,162 INFO    Thread-17 :13780 [dir_watcher.py:_on_file_modified():295] file/dir modified: C:\Users\31083\Documents\GitHub\Project\CNC_YOLOV8_Segmodel\Code\yolo\wandb\run-20230720_141958-449vuo84\files\output.log
+2023-07-20 14:21:53,240 DEBUG   HandlerThread:13780 [handler.py:handle_request():144] handle_request: stop_status
+2023-07-20 14:21:53,241 DEBUG   SenderThread:13780 [sender.py:send_request():402] send_request: stop_status
+2023-07-20 14:21:53,806 DEBUG   HandlerThread:13780 [handler.py:handle_request():144] handle_request: status_report
+2023-07-20 14:21:55,208 INFO    Thread-17 :13780 [dir_watcher.py:_on_file_modified():295] file/dir modified: C:\Users\31083\Documents\GitHub\Project\CNC_YOLOV8_Segmodel\Code\yolo\wandb\run-20230720_141958-449vuo84\files\output.log
+2023-07-20 14:21:59,242 INFO    Thread-17 :13780 [dir_watcher.py:_on_file_modified():295] file/dir modified: C:\Users\31083\Documents\GitHub\Project\CNC_YOLOV8_Segmodel\Code\yolo\wandb\run-20230720_141958-449vuo84\files\output.log
+2023-07-20 14:21:59,368 DEBUG   SenderThread:13780 [sender.py:send():375] send: stats
+2023-07-20 14:21:59,368 DEBUG   HandlerThread:13780 [handler.py:handle_request():144] handle_request: status_report
+2023-07-20 14:21:59,743 DEBUG   HandlerThread:13780 [handler.py:handle_request():144] handle_request: partial_history
+2023-07-20 14:21:59,744 DEBUG   HandlerThread:13780 [handler.py:handle_request():144] handle_request: partial_history
+2023-07-20 14:21:59,744 DEBUG   SenderThread:13780 [sender.py:send():375] send: history
+2023-07-20 14:21:59,744 DEBUG   SenderThread:13780 [sender.py:send_request():402] send_request: summary_record
+2023-07-20 14:21:59,745 INFO    SenderThread:13780 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-07-20 14:22:00,256 INFO    Thread-17 :13780 [dir_watcher.py:_on_file_modified():295] file/dir modified: C:\Users\31083\Documents\GitHub\Project\CNC_YOLOV8_Segmodel\Code\yolo\wandb\run-20230720_141958-449vuo84\files\wandb-summary.json
+2023-07-20 14:22:00,784 DEBUG   HandlerThread:13780 [handler.py:handle_request():144] handle_request: partial_history
+2023-07-20 14:22:01,260 INFO    Thread-17 :13780 [dir_watcher.py:_on_file_modified():295] file/dir modified: C:\Users\31083\Documents\GitHub\Project\CNC_YOLOV8_Segmodel\Code\yolo\wandb\run-20230720_141958-449vuo84\files\output.log
+2023-07-20 14:22:04,407 DEBUG   HandlerThread:13780 [handler.py:handle_request():144] handle_request: status_report
+2023-07-20 14:22:05,304 INFO    Thread-17 :13780 [dir_watcher.py:_on_file_modified():295] file/dir modified: C:\Users\31083\Documents\GitHub\Project\CNC_YOLOV8_Segmodel\Code\yolo\wandb\run-20230720_141958-449vuo84\files\output.log
+2023-07-20 14:22:08,238 DEBUG   HandlerThread:13780 [handler.py:handle_request():144] handle_request: stop_status
+2023-07-20 14:22:08,239 DEBUG   SenderThread:13780 [sender.py:send_request():402] send_request: stop_status
+2023-07-20 14:22:09,349 INFO    Thread-17 :13780 [dir_watcher.py:_on_file_modified():295] file/dir modified: C:\Users\31083\Documents\GitHub\Project\CNC_YOLOV8_Segmodel\Code\yolo\wandb\run-20230720_141958-449vuo84\files\output.log
+2023-07-20 14:22:09,473 DEBUG   HandlerThread:13780 [handler.py:handle_request():144] handle_request: status_report
+2023-07-20 14:22:13,379 INFO    Thread-17 :13780 [dir_watcher.py:_on_file_modified():295] file/dir modified: C:\Users\31083\Documents\GitHub\Project\CNC_YOLOV8_Segmodel\Code\yolo\wandb\run-20230720_141958-449vuo84\files\output.log
+2023-07-20 14:22:14,522 DEBUG   HandlerThread:13780 [handler.py:handle_request():144] handle_request: status_report
+2023-07-20 14:22:17,408 INFO    Thread-17 :13780 [dir_watcher.py:_on_file_modified():295] file/dir modified: C:\Users\31083\Documents\GitHub\Project\CNC_YOLOV8_Segmodel\Code\yolo\wandb\run-20230720_141958-449vuo84\files\output.log
+2023-07-20 14:22:19,424 INFO    Thread-17 :13780 [dir_watcher.py:_on_file_modified():295] file/dir modified: C:\Users\31083\Documents\GitHub\Project\CNC_YOLOV8_Segmodel\Code\yolo\wandb\run-20230720_141958-449vuo84\files\output.log
+2023-07-20 14:22:19,631 DEBUG   HandlerThread:13780 [handler.py:handle_request():144] handle_request: status_report
+2023-07-20 14:22:20,945 DEBUG   HandlerThread:13780 [handler.py:handle_request():144] handle_request: partial_history
+2023-07-20 14:22:20,945 DEBUG   HandlerThread:13780 [handler.py:handle_request():144] handle_request: partial_history
+2023-07-20 14:22:20,945 DEBUG   SenderThread:13780 [sender.py:send():375] send: history
+2023-07-20 14:22:20,946 DEBUG   SenderThread:13780 [sender.py:send_request():402] send_request: summary_record
+2023-07-20 14:22:20,946 INFO    SenderThread:13780 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-07-20 14:22:21,437 INFO    Thread-17 :13780 [dir_watcher.py:_on_file_modified():295] file/dir modified: C:\Users\31083\Documents\GitHub\Project\CNC_YOLOV8_Segmodel\Code\yolo\wandb\run-20230720_141958-449vuo84\files\wandb-summary.json
+2023-07-20 14:22:22,077 DEBUG   HandlerThread:13780 [handler.py:handle_request():144] handle_request: partial_history
+2023-07-20 14:22:23,251 DEBUG   HandlerThread:13780 [handler.py:handle_request():144] handle_request: stop_status
+2023-07-20 14:22:23,251 DEBUG   SenderThread:13780 [sender.py:send_request():402] send_request: stop_status
+2023-07-20 14:22:23,443 INFO    Thread-17 :13780 [dir_watcher.py:_on_file_modified():295] file/dir modified: C:\Users\31083\Documents\GitHub\Project\CNC_YOLOV8_Segmodel\Code\yolo\wandb\run-20230720_141958-449vuo84\files\output.log
+2023-07-20 14:22:25,476 DEBUG   HandlerThread:13780 [handler.py:handle_request():144] handle_request: status_report
+2023-07-20 14:22:27,488 INFO    Thread-17 :13780 [dir_watcher.py:_on_file_modified():295] file/dir modified: C:\Users\31083\Documents\GitHub\Project\CNC_YOLOV8_Segmodel\Code\yolo\wandb\run-20230720_141958-449vuo84\files\output.log
+2023-07-20 14:22:29,382 DEBUG   SenderThread:13780 [sender.py:send():375] send: stats
+2023-07-20 14:22:31,392 DEBUG   HandlerThread:13780 [handler.py:handle_request():144] handle_request: status_report
+2023-07-20 14:22:31,503 INFO    Thread-17 :13780 [dir_watcher.py:_on_file_modified():295] file/dir modified: C:\Users\31083\Documents\GitHub\Project\CNC_YOLOV8_Segmodel\Code\yolo\wandb\run-20230720_141958-449vuo84\files\output.log
+2023-07-20 14:22:33,529 INFO    Thread-17 :13780 [dir_watcher.py:_on_file_modified():295] file/dir modified: C:\Users\31083\Documents\GitHub\Project\CNC_YOLOV8_Segmodel\Code\yolo\wandb\run-20230720_141958-449vuo84\files\output.log
+2023-07-20 14:22:36,459 DEBUG   HandlerThread:13780 [handler.py:handle_request():144] handle_request: status_report
+2023-07-20 14:22:37,584 INFO    Thread-17 :13780 [dir_watcher.py:_on_file_modified():295] file/dir modified: C:\Users\31083\Documents\GitHub\Project\CNC_YOLOV8_Segmodel\Code\yolo\wandb\run-20230720_141958-449vuo84\files\output.log
+2023-07-20 14:22:38,263 DEBUG   HandlerThread:13780 [handler.py:handle_request():144] handle_request: stop_status
+2023-07-20 14:22:38,264 DEBUG   SenderThread:13780 [sender.py:send_request():402] send_request: stop_status
+2023-07-20 14:22:41,610 INFO    Thread-17 :13780 [dir_watcher.py:_on_file_modified():295] file/dir modified: C:\Users\31083\Documents\GitHub\Project\CNC_YOLOV8_Segmodel\Code\yolo\wandb\run-20230720_141958-449vuo84\files\output.log
+2023-07-20 14:22:42,138 DEBUG   HandlerThread:13780 [handler.py:handle_request():144] handle_request: status_report
+2023-07-20 14:22:42,460 DEBUG   HandlerThread:13780 [handler.py:handle_request():144] handle_request: partial_history
+2023-07-20 14:22:42,460 DEBUG   HandlerThread:13780 [handler.py:handle_request():144] handle_request: partial_history
+2023-07-20 14:22:42,461 DEBUG   SenderThread:13780 [sender.py:send():375] send: history
+2023-07-20 14:22:42,461 DEBUG   SenderThread:13780 [sender.py:send_request():402] send_request: summary_record
+2023-07-20 14:22:42,461 INFO    SenderThread:13780 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-07-20 14:22:42,617 INFO    Thread-17 :13780 [dir_watcher.py:_on_file_modified():295] file/dir modified: C:\Users\31083\Documents\GitHub\Project\CNC_YOLOV8_Segmodel\Code\yolo\wandb\run-20230720_141958-449vuo84\files\wandb-summary.json
+2023-07-20 14:22:43,573 DEBUG   HandlerThread:13780 [handler.py:handle_request():144] handle_request: partial_history
+2023-07-20 14:22:43,621 INFO    Thread-17 :13780 [dir_watcher.py:_on_file_modified():295] file/dir modified: C:\Users\31083\Documents\GitHub\Project\CNC_YOLOV8_Segmodel\Code\yolo\wandb\run-20230720_141958-449vuo84\files\output.log
+2023-07-20 14:22:45,647 INFO    Thread-17 :13780 [dir_watcher.py:_on_file_modified():295] file/dir modified: C:\Users\31083\Documents\GitHub\Project\CNC_YOLOV8_Segmodel\Code\yolo\wandb\run-20230720_141958-449vuo84\files\output.log
+2023-07-20 14:22:47,673 INFO    Thread-17 :13780 [dir_watcher.py:_on_file_modified():295] file/dir modified: C:\Users\31083\Documents\GitHub\Project\CNC_YOLOV8_Segmodel\Code\yolo\wandb\run-20230720_141958-449vuo84\files\output.log
+2023-07-20 14:22:48,135 DEBUG   HandlerThread:13780 [handler.py:handle_request():144] handle_request: status_report
+2023-07-20 14:22:51,721 INFO    Thread-17 :13780 [dir_watcher.py:_on_file_modified():295] file/dir modified: C:\Users\31083\Documents\GitHub\Project\CNC_YOLOV8_Segmodel\Code\yolo\wandb\run-20230720_141958-449vuo84\files\output.log
+2023-07-20 14:22:53,265 DEBUG   HandlerThread:13780 [handler.py:handle_request():144] handle_request: stop_status
+2023-07-20 14:22:53,266 DEBUG   SenderThread:13780 [sender.py:send_request():402] send_request: stop_status
+2023-07-20 14:22:53,481 DEBUG   HandlerThread:13780 [handler.py:handle_request():144] handle_request: status_report
+2023-07-20 14:22:55,768 INFO    Thread-17 :13780 [dir_watcher.py:_on_file_modified():295] file/dir modified: C:\Users\31083\Documents\GitHub\Project\CNC_YOLOV8_Segmodel\Code\yolo\wandb\run-20230720_141958-449vuo84\files\output.log
+2023-07-20 14:22:59,069 DEBUG   HandlerThread:13780 [handler.py:handle_request():144] handle_request: status_report
+2023-07-20 14:22:59,389 DEBUG   SenderThread:13780 [sender.py:send():375] send: stats
+2023-07-20 14:22:59,789 INFO    Thread-17 :13780 [dir_watcher.py:_on_file_modified():295] file/dir modified: C:\Users\31083\Documents\GitHub\Project\CNC_YOLOV8_Segmodel\Code\yolo\wandb\run-20230720_141958-449vuo84\files\output.log
+2023-07-20 14:23:03,816 INFO    Thread-17 :13780 [dir_watcher.py:_on_file_modified():295] file/dir modified: C:\Users\31083\Documents\GitHub\Project\CNC_YOLOV8_Segmodel\Code\yolo\wandb\run-20230720_141958-449vuo84\files\output.log
+2023-07-20 14:23:03,989 DEBUG   HandlerThread:13780 [handler.py:handle_request():144] handle_request: partial_history
+2023-07-20 14:23:03,989 DEBUG   HandlerThread:13780 [handler.py:handle_request():144] handle_request: partial_history
+2023-07-20 14:23:03,990 DEBUG   SenderThread:13780 [sender.py:send():375] send: history
+2023-07-20 14:23:03,990 DEBUG   SenderThread:13780 [sender.py:send_request():402] send_request: summary_record
+2023-07-20 14:23:03,991 INFO    SenderThread:13780 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-07-20 14:23:04,715 DEBUG   HandlerThread:13780 [handler.py:handle_request():144] handle_request: status_report
+2023-07-20 14:23:04,826 INFO    Thread-17 :13780 [dir_watcher.py:_on_file_modified():295] file/dir modified: C:\Users\31083\Documents\GitHub\Project\CNC_YOLOV8_Segmodel\Code\yolo\wandb\run-20230720_141958-449vuo84\files\wandb-summary.json
+2023-07-20 14:23:05,313 DEBUG   HandlerThread:13780 [handler.py:handle_request():144] handle_request: partial_history
+2023-07-20 14:23:05,834 INFO    Thread-17 :13780 [dir_watcher.py:_on_file_modified():295] file/dir modified: C:\Users\31083\Documents\GitHub\Project\CNC_YOLOV8_Segmodel\Code\yolo\wandb\run-20230720_141958-449vuo84\files\output.log
+2023-07-20 14:23:07,850 INFO    Thread-17 :13780 [dir_watcher.py:_on_file_modified():295] file/dir modified: C:\Users\31083\Documents\GitHub\Project\CNC_YOLOV8_Segmodel\Code\yolo\wandb\run-20230720_141958-449vuo84\files\output.log
+2023-07-20 14:23:08,279 DEBUG   HandlerThread:13780 [handler.py:handle_request():144] handle_request: stop_status
+2023-07-20 14:23:08,279 DEBUG   SenderThread:13780 [sender.py:send_request():402] send_request: stop_status
+2023-07-20 14:23:09,860 INFO    Thread-17 :13780 [dir_watcher.py:_on_file_modified():295] file/dir modified: C:\Users\31083\Documents\GitHub\Project\CNC_YOLOV8_Segmodel\Code\yolo\wandb\run-20230720_141958-449vuo84\files\output.log
+2023-07-20 14:23:09,908 DEBUG   HandlerThread:13780 [handler.py:handle_request():144] handle_request: status_report
+2023-07-20 14:23:13,892 INFO    Thread-17 :13780 [dir_watcher.py:_on_file_modified():295] file/dir modified: C:\Users\31083\Documents\GitHub\Project\CNC_YOLOV8_Segmodel\Code\yolo\wandb\run-20230720_141958-449vuo84\files\output.log
+2023-07-20 14:23:15,515 DEBUG   HandlerThread:13780 [handler.py:handle_request():144] handle_request: status_report
+2023-07-20 14:23:17,924 INFO    Thread-17 :13780 [dir_watcher.py:_on_file_modified():295] file/dir modified: C:\Users\31083\Documents\GitHub\Project\CNC_YOLOV8_Segmodel\Code\yolo\wandb\run-20230720_141958-449vuo84\files\output.log
+2023-07-20 14:23:20,674 DEBUG   HandlerThread:13780 [handler.py:handle_request():144] handle_request: status_report
+2023-07-20 14:23:21,953 INFO    Thread-17 :13780 [dir_watcher.py:_on_file_modified():295] file/dir modified: C:\Users\31083\Documents\GitHub\Project\CNC_YOLOV8_Segmodel\Code\yolo\wandb\run-20230720_141958-449vuo84\files\output.log
+2023-07-20 14:23:23,287 DEBUG   HandlerThread:13780 [handler.py:handle_request():144] handle_request: stop_status
+2023-07-20 14:23:23,288 DEBUG   SenderThread:13780 [sender.py:send_request():402] send_request: stop_status
+2023-07-20 14:23:25,807 DEBUG   HandlerThread:13780 [handler.py:handle_request():144] handle_request: status_report
+2023-07-20 14:23:25,808 DEBUG   HandlerThread:13780 [handler.py:handle_request():144] handle_request: partial_history
+2023-07-20 14:23:25,809 DEBUG   HandlerThread:13780 [handler.py:handle_request():144] handle_request: partial_history
+2023-07-20 14:23:25,809 DEBUG   SenderThread:13780 [sender.py:send():375] send: history
+2023-07-20 14:23:25,809 DEBUG   SenderThread:13780 [sender.py:send_request():402] send_request: summary_record
+2023-07-20 14:23:25,810 INFO    SenderThread:13780 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-07-20 14:23:25,996 INFO    Thread-17 :13780 [dir_watcher.py:_on_file_modified():295] file/dir modified: C:\Users\31083\Documents\GitHub\Project\CNC_YOLOV8_Segmodel\Code\yolo\wandb\run-20230720_141958-449vuo84\files\wandb-summary.json
+2023-07-20 14:23:25,997 INFO    Thread-17 :13780 [dir_watcher.py:_on_file_modified():295] file/dir modified: C:\Users\31083\Documents\GitHub\Project\CNC_YOLOV8_Segmodel\Code\yolo\wandb\run-20230720_141958-449vuo84\files\output.log
+2023-07-20 14:23:26,914 DEBUG   HandlerThread:13780 [handler.py:handle_request():144] handle_request: partial_history
+2023-07-20 14:23:28,015 INFO    Thread-17 :13780 [dir_watcher.py:_on_file_modified():295] file/dir modified: C:\Users\31083\Documents\GitHub\Project\CNC_YOLOV8_Segmodel\Code\yolo\wandb\run-20230720_141958-449vuo84\files\output.log
+2023-07-20 14:23:29,391 DEBUG   SenderThread:13780 [sender.py:send():375] send: stats
+2023-07-20 14:23:31,441 DEBUG   HandlerThread:13780 [handler.py:handle_request():144] handle_request: status_report
+2023-07-20 14:23:32,046 INFO    Thread-17 :13780 [dir_watcher.py:_on_file_modified():295] file/dir modified: C:\Users\31083\Documents\GitHub\Project\CNC_YOLOV8_Segmodel\Code\yolo\wandb\run-20230720_141958-449vuo84\files\output.log
+2023-07-20 14:23:36,080 INFO    Thread-17 :13780 [dir_watcher.py:_on_file_modified():295] file/dir modified: C:\Users\31083\Documents\GitHub\Project\CNC_YOLOV8_Segmodel\Code\yolo\wandb\run-20230720_141958-449vuo84\files\output.log
+2023-07-20 14:23:37,048 DEBUG   HandlerThread:13780 [handler.py:handle_request():144] handle_request: status_report
+2023-07-20 14:23:38,286 DEBUG   HandlerThread:13780 [handler.py:handle_request():144] handle_request: stop_status
+2023-07-20 14:23:38,287 DEBUG   SenderThread:13780 [sender.py:send_request():402] send_request: stop_status
+2023-07-20 14:23:40,121 INFO    Thread-17 :13780 [dir_watcher.py:_on_file_modified():295] file/dir modified: C:\Users\31083\Documents\GitHub\Project\CNC_YOLOV8_Segmodel\Code\yolo\wandb\run-20230720_141958-449vuo84\files\output.log
+2023-07-20 14:23:42,355 DEBUG   HandlerThread:13780 [handler.py:handle_request():144] handle_request: status_report
+2023-07-20 14:23:44,159 INFO    Thread-17 :13780 [dir_watcher.py:_on_file_modified():295] file/dir modified: C:\Users\31083\Documents\GitHub\Project\CNC_YOLOV8_Segmodel\Code\yolo\wandb\run-20230720_141958-449vuo84\files\output.log
+2023-07-20 14:23:46,183 INFO    Thread-17 :13780 [dir_watcher.py:_on_file_modified():295] file/dir modified: C:\Users\31083\Documents\GitHub\Project\CNC_YOLOV8_Segmodel\Code\yolo\wandb\run-20230720_141958-449vuo84\files\output.log
+2023-07-20 14:23:47,347 DEBUG   HandlerThread:13780 [handler.py:handle_request():144] handle_request: partial_history
+2023-07-20 14:23:47,348 DEBUG   HandlerThread:13780 [handler.py:handle_request():144] handle_request: partial_history
+2023-07-20 14:23:47,349 DEBUG   SenderThread:13780 [sender.py:send():375] send: history
+2023-07-20 14:23:47,349 DEBUG   SenderThread:13780 [sender.py:send_request():402] send_request: summary_record
+2023-07-20 14:23:47,350 INFO    SenderThread:13780 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-07-20 14:23:48,033 DEBUG   HandlerThread:13780 [handler.py:handle_request():144] handle_request: status_report
+2023-07-20 14:23:48,202 INFO    Thread-17 :13780 [dir_watcher.py:_on_file_modified():295] file/dir modified: C:\Users\31083\Documents\GitHub\Project\CNC_YOLOV8_Segmodel\Code\yolo\wandb\run-20230720_141958-449vuo84\files\wandb-summary.json
+2023-07-20 14:23:48,301 DEBUG   HandlerThread:13780 [handler.py:handle_request():144] handle_request: partial_history
+2023-07-20 14:23:50,217 INFO    Thread-17 :13780 [dir_watcher.py:_on_file_modified():295] file/dir modified: C:\Users\31083\Documents\GitHub\Project\CNC_YOLOV8_Segmodel\Code\yolo\wandb\run-20230720_141958-449vuo84\files\output.log
+2023-07-20 14:23:53,300 DEBUG   HandlerThread:13780 [handler.py:handle_request():144] handle_request: stop_status
+2023-07-20 14:23:53,301 DEBUG   SenderThread:13780 [sender.py:send_request():402] send_request: stop_status
+2023-07-20 14:23:53,516 DEBUG   HandlerThread:13780 [handler.py:handle_request():144] handle_request: status_report
+2023-07-20 14:23:54,259 INFO    Thread-17 :13780 [dir_watcher.py:_on_file_modified():295] file/dir modified: C:\Users\31083\Documents\GitHub\Project\CNC_YOLOV8_Segmodel\Code\yolo\wandb\run-20230720_141958-449vuo84\files\output.log
+2023-07-20 14:23:58,283 INFO    Thread-17 :13780 [dir_watcher.py:_on_file_modified():295] file/dir modified: C:\Users\31083\Documents\GitHub\Project\CNC_YOLOV8_Segmodel\Code\yolo\wandb\run-20230720_141958-449vuo84\files\output.log
+2023-07-20 14:23:58,586 DEBUG   HandlerThread:13780 [handler.py:handle_request():144] handle_request: status_report
+2023-07-20 14:23:59,397 DEBUG   SenderThread:13780 [sender.py:send():375] send: stats
+2023-07-20 14:24:00,310 INFO    Thread-17 :13780 [dir_watcher.py:_on_file_modified():295] file/dir modified: C:\Users\31083\Documents\GitHub\Project\CNC_YOLOV8_Segmodel\Code\yolo\wandb\run-20230720_141958-449vuo84\files\output.log
+2023-07-20 14:24:03,764 DEBUG   HandlerThread:13780 [handler.py:handle_request():144] handle_request: status_report
+2023-07-20 14:24:04,357 INFO    Thread-17 :13780 [dir_watcher.py:_on_file_modified():295] file/dir modified: C:\Users\31083\Documents\GitHub\Project\CNC_YOLOV8_Segmodel\Code\yolo\wandb\run-20230720_141958-449vuo84\files\output.log
+2023-07-20 14:24:08,308 DEBUG   HandlerThread:13780 [handler.py:handle_request():144] handle_request: stop_status
+2023-07-20 14:24:08,309 DEBUG   SenderThread:13780 [sender.py:send_request():402] send_request: stop_status
+2023-07-20 14:24:08,397 INFO    Thread-17 :13780 [dir_watcher.py:_on_file_modified():295] file/dir modified: C:\Users\31083\Documents\GitHub\Project\CNC_YOLOV8_Segmodel\Code\yolo\wandb\run-20230720_141958-449vuo84\files\output.log
+2023-07-20 14:24:08,799 DEBUG   HandlerThread:13780 [handler.py:handle_request():144] handle_request: status_report
+2023-07-20 14:24:08,799 DEBUG   HandlerThread:13780 [handler.py:handle_request():144] handle_request: partial_history
+2023-07-20 14:24:08,801 DEBUG   HandlerThread:13780 [handler.py:handle_request():144] handle_request: partial_history
+2023-07-20 14:24:08,801 DEBUG   SenderThread:13780 [sender.py:send():375] send: history
+2023-07-20 14:24:08,801 DEBUG   SenderThread:13780 [sender.py:send_request():402] send_request: summary_record
+2023-07-20 14:24:08,801 INFO    SenderThread:13780 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-07-20 14:24:09,399 INFO    Thread-17 :13780 [dir_watcher.py:_on_file_modified():295] file/dir modified: C:\Users\31083\Documents\GitHub\Project\CNC_YOLOV8_Segmodel\Code\yolo\wandb\run-20230720_141958-449vuo84\files\wandb-summary.json
+2023-07-20 14:24:09,789 DEBUG   HandlerThread:13780 [handler.py:handle_request():144] handle_request: partial_history
+2023-07-20 14:24:10,401 INFO    Thread-17 :13780 [dir_watcher.py:_on_file_modified():295] file/dir modified: C:\Users\31083\Documents\GitHub\Project\CNC_YOLOV8_Segmodel\Code\yolo\wandb\run-20230720_141958-449vuo84\files\output.log
+2023-07-20 14:24:12,421 INFO    Thread-17 :13780 [dir_watcher.py:_on_file_modified():295] file/dir modified: C:\Users\31083\Documents\GitHub\Project\CNC_YOLOV8_Segmodel\Code\yolo\wandb\run-20230720_141958-449vuo84\files\output.log
+2023-07-20 14:24:14,366 DEBUG   HandlerThread:13780 [handler.py:handle_request():144] handle_request: status_report
+2023-07-20 14:24:14,432 INFO    Thread-17 :13780 [dir_watcher.py:_on_file_modified():295] file/dir modified: C:\Users\31083\Documents\GitHub\Project\CNC_YOLOV8_Segmodel\Code\yolo\wandb\run-20230720_141958-449vuo84\files\output.log
+2023-07-20 14:24:18,456 INFO    Thread-17 :13780 [dir_watcher.py:_on_file_modified():295] file/dir modified: C:\Users\31083\Documents\GitHub\Project\CNC_YOLOV8_Segmodel\Code\yolo\wandb\run-20230720_141958-449vuo84\files\output.log
+2023-07-20 14:24:19,931 DEBUG   HandlerThread:13780 [handler.py:handle_request():144] handle_request: status_report
+2023-07-20 14:24:22,527 INFO    Thread-17 :13780 [dir_watcher.py:_on_file_modified():295] file/dir modified: C:\Users\31083\Documents\GitHub\Project\CNC_YOLOV8_Segmodel\Code\yolo\wandb\run-20230720_141958-449vuo84\files\output.log
+2023-07-20 14:24:23,320 DEBUG   HandlerThread:13780 [handler.py:handle_request():144] handle_request: stop_status
+2023-07-20 14:24:23,320 DEBUG   SenderThread:13780 [sender.py:send_request():402] send_request: stop_status
+2023-07-20 14:24:25,313 DEBUG   HandlerThread:13780 [handler.py:handle_request():144] handle_request: status_report
+2023-07-20 14:24:26,556 INFO    Thread-17 :13780 [dir_watcher.py:_on_file_modified():295] file/dir modified: C:\Users\31083\Documents\GitHub\Project\CNC_YOLOV8_Segmodel\Code\yolo\wandb\run-20230720_141958-449vuo84\files\output.log
+2023-07-20 14:24:29,410 DEBUG   SenderThread:13780 [sender.py:send():375] send: stats
+2023-07-20 14:24:30,358 DEBUG   HandlerThread:13780 [handler.py:handle_request():144] handle_request: status_report
+2023-07-20 14:24:30,359 DEBUG   HandlerThread:13780 [handler.py:handle_request():144] handle_request: partial_history
+2023-07-20 14:24:30,359 DEBUG   HandlerThread:13780 [handler.py:handle_request():144] handle_request: partial_history
+2023-07-20 14:24:30,359 DEBUG   SenderThread:13780 [sender.py:send():375] send: history
+2023-07-20 14:24:30,360 DEBUG   SenderThread:13780 [sender.py:send_request():402] send_request: summary_record
+2023-07-20 14:24:30,360 INFO    SenderThread:13780 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-07-20 14:24:30,585 INFO    Thread-17 :13780 [dir_watcher.py:_on_file_modified():295] file/dir modified: C:\Users\31083\Documents\GitHub\Project\CNC_YOLOV8_Segmodel\Code\yolo\wandb\run-20230720_141958-449vuo84\files\wandb-summary.json
+2023-07-20 14:24:30,585 INFO    Thread-17 :13780 [dir_watcher.py:_on_file_modified():295] file/dir modified: C:\Users\31083\Documents\GitHub\Project\CNC_YOLOV8_Segmodel\Code\yolo\wandb\run-20230720_141958-449vuo84\files\output.log
+2023-07-20 14:24:31,464 DEBUG   HandlerThread:13780 [handler.py:handle_request():144] handle_request: partial_history
+2023-07-20 14:24:32,594 INFO    Thread-17 :13780 [dir_watcher.py:_on_file_modified():295] file/dir modified: C:\Users\31083\Documents\GitHub\Project\CNC_YOLOV8_Segmodel\Code\yolo\wandb\run-20230720_141958-449vuo84\files\output.log
+2023-07-20 14:24:36,112 DEBUG   HandlerThread:13780 [handler.py:handle_request():144] handle_request: status_report
+2023-07-20 14:24:36,623 INFO    Thread-17 :13780 [dir_watcher.py:_on_file_modified():295] file/dir modified: C:\Users\31083\Documents\GitHub\Project\CNC_YOLOV8_Segmodel\Code\yolo\wandb\run-20230720_141958-449vuo84\files\output.log
+2023-07-20 14:24:38,338 DEBUG   HandlerThread:13780 [handler.py:handle_request():144] handle_request: stop_status
+2023-07-20 14:24:38,339 DEBUG   SenderThread:13780 [sender.py:send_request():402] send_request: stop_status
+2023-07-20 14:24:40,646 INFO    Thread-17 :13780 [dir_watcher.py:_on_file_modified():295] file/dir modified: C:\Users\31083\Documents\GitHub\Project\CNC_YOLOV8_Segmodel\Code\yolo\wandb\run-20230720_141958-449vuo84\files\output.log
+2023-07-20 14:24:41,708 DEBUG   HandlerThread:13780 [handler.py:handle_request():144] handle_request: status_report
+2023-07-20 14:24:44,695 INFO    Thread-17 :13780 [dir_watcher.py:_on_file_modified():295] file/dir modified: C:\Users\31083\Documents\GitHub\Project\CNC_YOLOV8_Segmodel\Code\yolo\wandb\run-20230720_141958-449vuo84\files\output.log
+2023-07-20 14:24:46,995 DEBUG   HandlerThread:13780 [handler.py:handle_request():144] handle_request: status_report
+2023-07-20 14:24:48,735 INFO    Thread-17 :13780 [dir_watcher.py:_on_file_modified():295] file/dir modified: C:\Users\31083\Documents\GitHub\Project\CNC_YOLOV8_Segmodel\Code\yolo\wandb\run-20230720_141958-449vuo84\files\output.log
+2023-07-20 14:24:50,749 INFO    Thread-17 :13780 [dir_watcher.py:_on_file_modified():295] file/dir modified: C:\Users\31083\Documents\GitHub\Project\CNC_YOLOV8_Segmodel\Code\yolo\wandb\run-20230720_141958-449vuo84\files\output.log
+2023-07-20 14:24:52,050 DEBUG   HandlerThread:13780 [handler.py:handle_request():144] handle_request: status_report
+2023-07-20 14:24:52,050 DEBUG   HandlerThread:13780 [handler.py:handle_request():144] handle_request: partial_history
+2023-07-20 14:24:52,057 DEBUG   HandlerThread:13780 [handler.py:handle_request():144] handle_request: partial_history
+2023-07-20 14:24:52,057 DEBUG   SenderThread:13780 [sender.py:send():375] send: history
+2023-07-20 14:24:52,057 DEBUG   SenderThread:13780 [sender.py:send_request():402] send_request: summary_record
+2023-07-20 14:24:52,057 INFO    SenderThread:13780 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-07-20 14:24:52,768 INFO    Thread-17 :13780 [dir_watcher.py:_on_file_modified():295] file/dir modified: C:\Users\31083\Documents\GitHub\Project\CNC_YOLOV8_Segmodel\Code\yolo\wandb\run-20230720_141958-449vuo84\files\wandb-summary.json
+2023-07-20 14:24:53,004 DEBUG   HandlerThread:13780 [handler.py:handle_request():144] handle_request: partial_history
+2023-07-20 14:24:53,342 DEBUG   HandlerThread:13780 [handler.py:handle_request():144] handle_request: stop_status
+2023-07-20 14:24:53,343 DEBUG   SenderThread:13780 [sender.py:send_request():402] send_request: stop_status
+2023-07-20 14:24:54,790 INFO    Thread-17 :13780 [dir_watcher.py:_on_file_modified():295] file/dir modified: C:\Users\31083\Documents\GitHub\Project\CNC_YOLOV8_Segmodel\Code\yolo\wandb\run-20230720_141958-449vuo84\files\output.log
+2023-07-20 14:24:57,547 DEBUG   HandlerThread:13780 [handler.py:handle_request():144] handle_request: status_report
+2023-07-20 14:24:58,830 INFO    Thread-17 :13780 [dir_watcher.py:_on_file_modified():295] file/dir modified: C:\Users\31083\Documents\GitHub\Project\CNC_YOLOV8_Segmodel\Code\yolo\wandb\run-20230720_141958-449vuo84\files\output.log
+2023-07-20 14:24:59,411 DEBUG   SenderThread:13780 [sender.py:send():375] send: stats
+2023-07-20 14:25:02,870 INFO    Thread-17 :13780 [dir_watcher.py:_on_file_modified():295] file/dir modified: C:\Users\31083\Documents\GitHub\Project\CNC_YOLOV8_Segmodel\Code\yolo\wandb\run-20230720_141958-449vuo84\files\output.log
+2023-07-20 14:25:03,279 DEBUG   HandlerThread:13780 [handler.py:handle_request():144] handle_request: status_report
+2023-07-20 14:25:05,898 INFO    Thread-17 :13780 [dir_watcher.py:_on_file_modified():295] file/dir modified: C:\Users\31083\Documents\GitHub\Project\CNC_YOLOV8_Segmodel\Code\yolo\wandb\run-20230720_141958-449vuo84\files\output.log
+2023-07-20 14:25:07,909 INFO    Thread-17 :13780 [dir_watcher.py:_on_file_modified():295] file/dir modified: C:\Users\31083\Documents\GitHub\Project\CNC_YOLOV8_Segmodel\Code\yolo\wandb\run-20230720_141958-449vuo84\files\output.log
+2023-07-20 14:25:08,340 DEBUG   HandlerThread:13780 [handler.py:handle_request():144] handle_request: stop_status
+2023-07-20 14:25:08,340 DEBUG   SenderThread:13780 [sender.py:send_request():402] send_request: stop_status
+2023-07-20 14:25:08,544 DEBUG   HandlerThread:13780 [handler.py:handle_request():144] handle_request: status_report
+2023-07-20 14:25:11,943 INFO    Thread-17 :13780 [dir_watcher.py:_on_file_modified():295] file/dir modified: C:\Users\31083\Documents\GitHub\Project\CNC_YOLOV8_Segmodel\Code\yolo\wandb\run-20230720_141958-449vuo84\files\output.log
+2023-07-20 14:25:13,470 DEBUG   HandlerThread:13780 [handler.py:handle_request():144] handle_request: partial_history
+2023-07-20 14:25:13,478 DEBUG   HandlerThread:13780 [handler.py:handle_request():144] handle_request: partial_history
+2023-07-20 14:25:13,478 DEBUG   SenderThread:13780 [sender.py:send():375] send: history
+2023-07-20 14:25:13,478 DEBUG   SenderThread:13780 [sender.py:send_request():402] send_request: summary_record
+2023-07-20 14:25:13,478 INFO    SenderThread:13780 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-07-20 14:25:13,974 INFO    Thread-17 :13780 [dir_watcher.py:_on_file_modified():295] file/dir modified: C:\Users\31083\Documents\GitHub\Project\CNC_YOLOV8_Segmodel\Code\yolo\wandb\run-20230720_141958-449vuo84\files\wandb-summary.json
+2023-07-20 14:25:13,974 INFO    Thread-17 :13780 [dir_watcher.py:_on_file_modified():295] file/dir modified: C:\Users\31083\Documents\GitHub\Project\CNC_YOLOV8_Segmodel\Code\yolo\wandb\run-20230720_141958-449vuo84\files\output.log
+2023-07-20 14:25:14,187 DEBUG   HandlerThread:13780 [handler.py:handle_request():144] handle_request: status_report
+2023-07-20 14:25:14,439 DEBUG   HandlerThread:13780 [handler.py:handle_request():144] handle_request: partial_history
+2023-07-20 14:25:15,985 INFO    Thread-17 :13780 [dir_watcher.py:_on_file_modified():295] file/dir modified: C:\Users\31083\Documents\GitHub\Project\CNC_YOLOV8_Segmodel\Code\yolo\wandb\run-20230720_141958-449vuo84\files\output.log
+2023-07-20 14:25:20,017 DEBUG   HandlerThread:13780 [handler.py:handle_request():144] handle_request: status_report
+2023-07-20 14:25:20,035 INFO    Thread-17 :13780 [dir_watcher.py:_on_file_modified():295] file/dir modified: C:\Users\31083\Documents\GitHub\Project\CNC_YOLOV8_Segmodel\Code\yolo\wandb\run-20230720_141958-449vuo84\files\output.log
+2023-07-20 14:25:22,049 INFO    Thread-17 :13780 [dir_watcher.py:_on_file_modified():295] file/dir modified: C:\Users\31083\Documents\GitHub\Project\CNC_YOLOV8_Segmodel\Code\yolo\wandb\run-20230720_141958-449vuo84\files\output.log
+2023-07-20 14:25:23,361 DEBUG   HandlerThread:13780 [handler.py:handle_request():144] handle_request: stop_status
+2023-07-20 14:25:23,362 DEBUG   SenderThread:13780 [sender.py:send_request():402] send_request: stop_status
+2023-07-20 14:25:25,207 DEBUG   HandlerThread:13780 [handler.py:handle_request():144] handle_request: status_report
+2023-07-20 14:25:26,072 INFO    Thread-17 :13780 [dir_watcher.py:_on_file_modified():295] file/dir modified: C:\Users\31083\Documents\GitHub\Project\CNC_YOLOV8_Segmodel\Code\yolo\wandb\run-20230720_141958-449vuo84\files\output.log
+2023-07-20 14:25:29,414 DEBUG   SenderThread:13780 [sender.py:send():375] send: stats
+2023-07-20 14:25:30,108 INFO    Thread-17 :13780 [dir_watcher.py:_on_file_modified():295] file/dir modified: C:\Users\31083\Documents\GitHub\Project\CNC_YOLOV8_Segmodel\Code\yolo\wandb\run-20230720_141958-449vuo84\files\output.log
+2023-07-20 14:25:30,419 DEBUG   HandlerThread:13780 [handler.py:handle_request():144] handle_request: status_report
+2023-07-20 14:25:34,140 INFO    Thread-17 :13780 [dir_watcher.py:_on_file_modified():295] file/dir modified: C:\Users\31083\Documents\GitHub\Project\CNC_YOLOV8_Segmodel\Code\yolo\wandb\run-20230720_141958-449vuo84\files\output.log
+2023-07-20 14:25:34,839 DEBUG   HandlerThread:13780 [handler.py:handle_request():144] handle_request: partial_history
+2023-07-20 14:25:34,840 DEBUG   HandlerThread:13780 [handler.py:handle_request():144] handle_request: partial_history
+2023-07-20 14:25:34,840 DEBUG   SenderThread:13780 [sender.py:send():375] send: history
+2023-07-20 14:25:34,840 DEBUG   SenderThread:13780 [sender.py:send_request():402] send_request: summary_record
+2023-07-20 14:25:34,841 INFO    SenderThread:13780 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-07-20 14:25:35,143 INFO    Thread-17 :13780 [dir_watcher.py:_on_file_modified():295] file/dir modified: C:\Users\31083\Documents\GitHub\Project\CNC_YOLOV8_Segmodel\Code\yolo\wandb\run-20230720_141958-449vuo84\files\wandb-summary.json
+2023-07-20 14:25:35,568 DEBUG   HandlerThread:13780 [handler.py:handle_request():144] handle_request: status_report
+2023-07-20 14:25:35,816 DEBUG   HandlerThread:13780 [handler.py:handle_request():144] handle_request: partial_history
+2023-07-20 14:25:36,149 INFO    Thread-17 :13780 [dir_watcher.py:_on_file_modified():295] file/dir modified: C:\Users\31083\Documents\GitHub\Project\CNC_YOLOV8_Segmodel\Code\yolo\wandb\run-20230720_141958-449vuo84\files\output.log
+2023-07-20 14:25:38,174 INFO    Thread-17 :13780 [dir_watcher.py:_on_file_modified():295] file/dir modified: C:\Users\31083\Documents\GitHub\Project\CNC_YOLOV8_Segmodel\Code\yolo\wandb\run-20230720_141958-449vuo84\files\output.log
+2023-07-20 14:25:38,379 DEBUG   HandlerThread:13780 [handler.py:handle_request():144] handle_request: stop_status
+2023-07-20 14:25:38,380 DEBUG   SenderThread:13780 [sender.py:send_request():402] send_request: stop_status
+2023-07-20 14:25:40,200 INFO    Thread-17 :13780 [dir_watcher.py:_on_file_modified():295] file/dir modified: C:\Users\31083\Documents\GitHub\Project\CNC_YOLOV8_Segmodel\Code\yolo\wandb\run-20230720_141958-449vuo84\files\output.log
+2023-07-20 14:25:41,415 DEBUG   HandlerThread:13780 [handler.py:handle_request():144] handle_request: status_report
+2023-07-20 14:25:44,231 INFO    Thread-17 :13780 [dir_watcher.py:_on_file_modified():295] file/dir modified: C:\Users\31083\Documents\GitHub\Project\CNC_YOLOV8_Segmodel\Code\yolo\wandb\run-20230720_141958-449vuo84\files\output.log
+2023-07-20 14:25:46,695 DEBUG   HandlerThread:13780 [handler.py:handle_request():144] handle_request: status_report
+2023-07-20 14:25:48,266 INFO    Thread-17 :13780 [dir_watcher.py:_on_file_modified():295] file/dir modified: C:\Users\31083\Documents\GitHub\Project\CNC_YOLOV8_Segmodel\Code\yolo\wandb\run-20230720_141958-449vuo84\files\output.log
+2023-07-20 14:25:52,298 INFO    Thread-17 :13780 [dir_watcher.py:_on_file_modified():295] file/dir modified: C:\Users\31083\Documents\GitHub\Project\CNC_YOLOV8_Segmodel\Code\yolo\wandb\run-20230720_141958-449vuo84\files\output.log
+2023-07-20 14:25:52,350 DEBUG   HandlerThread:13780 [handler.py:handle_request():144] handle_request: status_report
+2023-07-20 14:25:53,397 DEBUG   HandlerThread:13780 [handler.py:handle_request():144] handle_request: stop_status
+2023-07-20 14:25:53,398 DEBUG   SenderThread:13780 [sender.py:send_request():402] send_request: stop_status
+2023-07-20 14:25:56,343 INFO    Thread-17 :13780 [dir_watcher.py:_on_file_modified():295] file/dir modified: C:\Users\31083\Documents\GitHub\Project\CNC_YOLOV8_Segmodel\Code\yolo\wandb\run-20230720_141958-449vuo84\files\output.log
+2023-07-20 14:25:56,431 DEBUG   HandlerThread:13780 [handler.py:handle_request():144] handle_request: partial_history
+2023-07-20 14:25:56,431 DEBUG   HandlerThread:13780 [handler.py:handle_request():144] handle_request: partial_history
+2023-07-20 14:25:56,432 DEBUG   SenderThread:13780 [sender.py:send():375] send: history
+2023-07-20 14:25:56,432 DEBUG   SenderThread:13780 [sender.py:send_request():402] send_request: summary_record
+2023-07-20 14:25:56,433 INFO    SenderThread:13780 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-07-20 14:25:57,348 INFO    Thread-17 :13780 [dir_watcher.py:_on_file_modified():295] file/dir modified: C:\Users\31083\Documents\GitHub\Project\CNC_YOLOV8_Segmodel\Code\yolo\wandb\run-20230720_141958-449vuo84\files\wandb-summary.json
+2023-07-20 14:25:57,553 DEBUG   HandlerThread:13780 [handler.py:handle_request():144] handle_request: partial_history
+2023-07-20 14:25:57,553 DEBUG   HandlerThread:13780 [handler.py:handle_request():144] handle_request: status_report
+2023-07-20 14:25:58,357 INFO    Thread-17 :13780 [dir_watcher.py:_on_file_modified():295] file/dir modified: C:\Users\31083\Documents\GitHub\Project\CNC_YOLOV8_Segmodel\Code\yolo\wandb\run-20230720_141958-449vuo84\files\output.log
+2023-07-20 14:25:59,422 DEBUG   SenderThread:13780 [sender.py:send():375] send: stats
+2023-07-20 14:26:02,371 INFO    Thread-17 :13780 [dir_watcher.py:_on_file_modified():295] file/dir modified: C:\Users\31083\Documents\GitHub\Project\CNC_YOLOV8_Segmodel\Code\yolo\wandb\run-20230720_141958-449vuo84\files\output.log
+2023-07-20 14:26:03,110 DEBUG   HandlerThread:13780 [handler.py:handle_request():144] handle_request: status_report
+2023-07-20 14:26:06,390 INFO    Thread-17 :13780 [dir_watcher.py:_on_file_modified():295] file/dir modified: C:\Users\31083\Documents\GitHub\Project\CNC_YOLOV8_Segmodel\Code\yolo\wandb\run-20230720_141958-449vuo84\files\output.log
+2023-07-20 14:26:08,299 DEBUG   HandlerThread:13780 [handler.py:handle_request():144] handle_request: status_report
+2023-07-20 14:26:08,412 DEBUG   HandlerThread:13780 [handler.py:handle_request():144] handle_request: stop_status
+2023-07-20 14:26:08,413 DEBUG   SenderThread:13780 [sender.py:send_request():402] send_request: stop_status
+2023-07-20 14:26:10,443 INFO    Thread-17 :13780 [dir_watcher.py:_on_file_modified():295] file/dir modified: C:\Users\31083\Documents\GitHub\Project\CNC_YOLOV8_Segmodel\Code\yolo\wandb\run-20230720_141958-449vuo84\files\output.log
+2023-07-20 14:26:12,451 INFO    Thread-17 :13780 [dir_watcher.py:_on_file_modified():295] file/dir modified: C:\Users\31083\Documents\GitHub\Project\CNC_YOLOV8_Segmodel\Code\yolo\wandb\run-20230720_141958-449vuo84\files\output.log
+2023-07-20 14:26:14,035 DEBUG   HandlerThread:13780 [handler.py:handle_request():144] handle_request: status_report
+2023-07-20 14:26:16,490 INFO    Thread-17 :13780 [dir_watcher.py:_on_file_modified():295] file/dir modified: C:\Users\31083\Documents\GitHub\Project\CNC_YOLOV8_Segmodel\Code\yolo\wandb\run-20230720_141958-449vuo84\files\output.log
+2023-07-20 14:26:18,106 DEBUG   HandlerThread:13780 [handler.py:handle_request():144] handle_request: partial_history
+2023-07-20 14:26:18,107 DEBUG   HandlerThread:13780 [handler.py:handle_request():144] handle_request: partial_history
+2023-07-20 14:26:18,107 DEBUG   SenderThread:13780 [sender.py:send():375] send: history
+2023-07-20 14:26:18,107 DEBUG   SenderThread:13780 [sender.py:send_request():402] send_request: summary_record
+2023-07-20 14:26:18,108 INFO    SenderThread:13780 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-07-20 14:26:18,506 INFO    Thread-17 :13780 [dir_watcher.py:_on_file_modified():295] file/dir modified: C:\Users\31083\Documents\GitHub\Project\CNC_YOLOV8_Segmodel\Code\yolo\wandb\run-20230720_141958-449vuo84\files\wandb-summary.json
+2023-07-20 14:26:19,195 DEBUG   HandlerThread:13780 [handler.py:handle_request():144] handle_request: partial_history
+2023-07-20 14:26:19,197 DEBUG   HandlerThread:13780 [handler.py:handle_request():144] handle_request: status_report
+2023-07-20 14:26:20,525 INFO    Thread-17 :13780 [dir_watcher.py:_on_file_modified():295] file/dir modified: C:\Users\31083\Documents\GitHub\Project\CNC_YOLOV8_Segmodel\Code\yolo\wandb\run-20230720_141958-449vuo84\files\output.log
+2023-07-20 14:26:23,414 DEBUG   HandlerThread:13780 [handler.py:handle_request():144] handle_request: stop_status
+2023-07-20 14:26:23,415 DEBUG   SenderThread:13780 [sender.py:send_request():402] send_request: stop_status
+2023-07-20 14:26:24,563 INFO    Thread-17 :13780 [dir_watcher.py:_on_file_modified():295] file/dir modified: C:\Users\31083\Documents\GitHub\Project\CNC_YOLOV8_Segmodel\Code\yolo\wandb\run-20230720_141958-449vuo84\files\output.log
+2023-07-20 14:26:24,627 DEBUG   HandlerThread:13780 [handler.py:handle_request():144] handle_request: status_report
+2023-07-20 14:26:28,593 INFO    Thread-17 :13780 [dir_watcher.py:_on_file_modified():295] file/dir modified: C:\Users\31083\Documents\GitHub\Project\CNC_YOLOV8_Segmodel\Code\yolo\wandb\run-20230720_141958-449vuo84\files\output.log
+2023-07-20 14:26:29,438 DEBUG   SenderThread:13780 [sender.py:send():375] send: stats
+2023-07-20 14:26:30,027 DEBUG   HandlerThread:13780 [handler.py:handle_request():144] handle_request: status_report
+2023-07-20 14:26:32,623 INFO    Thread-17 :13780 [dir_watcher.py:_on_file_modified():295] file/dir modified: C:\Users\31083\Documents\GitHub\Project\CNC_YOLOV8_Segmodel\Code\yolo\wandb\run-20230720_141958-449vuo84\files\output.log
+2023-07-20 14:26:34,646 INFO    Thread-17 :13780 [dir_watcher.py:_on_file_modified():295] file/dir modified: C:\Users\31083\Documents\GitHub\Project\CNC_YOLOV8_Segmodel\Code\yolo\wandb\run-20230720_141958-449vuo84\files\output.log
+2023-07-20 14:26:35,739 DEBUG   HandlerThread:13780 [handler.py:handle_request():144] handle_request: status_report
+2023-07-20 14:26:38,425 DEBUG   HandlerThread:13780 [handler.py:handle_request():144] handle_request: stop_status
+2023-07-20 14:26:38,425 DEBUG   SenderThread:13780 [sender.py:send_request():402] send_request: stop_status
+2023-07-20 14:26:38,679 INFO    Thread-17 :13780 [dir_watcher.py:_on_file_modified():295] file/dir modified: C:\Users\31083\Documents\GitHub\Project\CNC_YOLOV8_Segmodel\Code\yolo\wandb\run-20230720_141958-449vuo84\files\output.log
+2023-07-20 14:26:39,845 DEBUG   HandlerThread:13780 [handler.py:handle_request():144] handle_request: partial_history
+2023-07-20 14:26:39,847 DEBUG   HandlerThread:13780 [handler.py:handle_request():144] handle_request: partial_history
+2023-07-20 14:26:39,847 DEBUG   SenderThread:13780 [sender.py:send():375] send: history
+2023-07-20 14:26:39,847 DEBUG   SenderThread:13780 [sender.py:send_request():402] send_request: summary_record
+2023-07-20 14:26:39,847 INFO    SenderThread:13780 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-07-20 14:26:40,706 INFO    Thread-17 :13780 [dir_watcher.py:_on_file_modified():295] file/dir modified: C:\Users\31083\Documents\GitHub\Project\CNC_YOLOV8_Segmodel\Code\yolo\wandb\run-20230720_141958-449vuo84\files\wandb-summary.json
+2023-07-20 14:26:40,706 INFO    Thread-17 :13780 [dir_watcher.py:_on_file_modified():295] file/dir modified: C:\Users\31083\Documents\GitHub\Project\CNC_YOLOV8_Segmodel\Code\yolo\wandb\run-20230720_141958-449vuo84\files\output.log
+2023-07-20 14:26:40,919 DEBUG   HandlerThread:13780 [handler.py:handle_request():144] handle_request: partial_history
+2023-07-20 14:26:40,919 DEBUG   HandlerThread:13780 [handler.py:handle_request():144] handle_request: status_report
+2023-07-20 14:26:42,717 INFO    Thread-17 :13780 [dir_watcher.py:_on_file_modified():295] file/dir modified: C:\Users\31083\Documents\GitHub\Project\CNC_YOLOV8_Segmodel\Code\yolo\wandb\run-20230720_141958-449vuo84\files\output.log
+2023-07-20 14:26:46,466 DEBUG   HandlerThread:13780 [handler.py:handle_request():144] handle_request: status_report
+2023-07-20 14:26:46,757 INFO    Thread-17 :13780 [dir_watcher.py:_on_file_modified():295] file/dir modified: C:\Users\31083\Documents\GitHub\Project\CNC_YOLOV8_Segmodel\Code\yolo\wandb\run-20230720_141958-449vuo84\files\output.log
+2023-07-20 14:26:48,779 INFO    Thread-17 :13780 [dir_watcher.py:_on_file_modified():295] file/dir modified: C:\Users\31083\Documents\GitHub\Project\CNC_YOLOV8_Segmodel\Code\yolo\wandb\run-20230720_141958-449vuo84\files\output.log
+2023-07-20 14:26:51,633 DEBUG   HandlerThread:13780 [handler.py:handle_request():144] handle_request: status_report
+2023-07-20 14:26:52,826 INFO    Thread-17 :13780 [dir_watcher.py:_on_file_modified():295] file/dir modified: C:\Users\31083\Documents\GitHub\Project\CNC_YOLOV8_Segmodel\Code\yolo\wandb\run-20230720_141958-449vuo84\files\output.log
+2023-07-20 14:26:53,454 DEBUG   HandlerThread:13780 [handler.py:handle_request():144] handle_request: stop_status
+2023-07-20 14:26:53,454 DEBUG   SenderThread:13780 [sender.py:send_request():402] send_request: stop_status
+2023-07-20 14:26:56,856 INFO    Thread-17 :13780 [dir_watcher.py:_on_file_modified():295] file/dir modified: C:\Users\31083\Documents\GitHub\Project\CNC_YOLOV8_Segmodel\Code\yolo\wandb\run-20230720_141958-449vuo84\files\output.log
+2023-07-20 14:26:57,321 DEBUG   HandlerThread:13780 [handler.py:handle_request():144] handle_request: status_report
+2023-07-20 14:26:59,454 DEBUG   SenderThread:13780 [sender.py:send():375] send: stats
+2023-07-20 14:27:00,890 INFO    Thread-17 :13780 [dir_watcher.py:_on_file_modified():295] file/dir modified: C:\Users\31083\Documents\GitHub\Project\CNC_YOLOV8_Segmodel\Code\yolo\wandb\run-20230720_141958-449vuo84\files\output.log
+2023-07-20 14:27:01,143 DEBUG   HandlerThread:13780 [handler.py:handle_request():144] handle_request: partial_history
+2023-07-20 14:27:01,143 DEBUG   HandlerThread:13780 [handler.py:handle_request():144] handle_request: partial_history
+2023-07-20 14:27:01,143 DEBUG   SenderThread:13780 [sender.py:send():375] send: history
+2023-07-20 14:27:01,143 DEBUG   SenderThread:13780 [sender.py:send_request():402] send_request: summary_record
+2023-07-20 14:27:01,143 INFO    SenderThread:13780 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-07-20 14:27:01,908 INFO    Thread-17 :13780 [dir_watcher.py:_on_file_modified():295] file/dir modified: C:\Users\31083\Documents\GitHub\Project\CNC_YOLOV8_Segmodel\Code\yolo\wandb\run-20230720_141958-449vuo84\files\wandb-summary.json
+2023-07-20 14:27:02,211 DEBUG   HandlerThread:13780 [handler.py:handle_request():144] handle_request: partial_history
+2023-07-20 14:27:02,928 INFO    Thread-17 :13780 [dir_watcher.py:_on_file_modified():295] file/dir modified: C:\Users\31083\Documents\GitHub\Project\CNC_YOLOV8_Segmodel\Code\yolo\wandb\run-20230720_141958-449vuo84\files\output.log
+2023-07-20 14:27:03,219 DEBUG   HandlerThread:13780 [handler.py:handle_request():144] handle_request: status_report
+2023-07-20 14:27:04,948 INFO    Thread-17 :13780 [dir_watcher.py:_on_file_modified():295] file/dir modified: C:\Users\31083\Documents\GitHub\Project\CNC_YOLOV8_Segmodel\Code\yolo\wandb\run-20230720_141958-449vuo84\files\output.log
+2023-07-20 14:27:06,952 INFO    Thread-17 :13780 [dir_watcher.py:_on_file_modified():295] file/dir modified: C:\Users\31083\Documents\GitHub\Project\CNC_YOLOV8_Segmodel\Code\yolo\wandb\run-20230720_141958-449vuo84\files\output.log
+2023-07-20 14:27:08,429 DEBUG   HandlerThread:13780 [handler.py:handle_request():144] handle_request: status_report
+2023-07-20 14:27:08,467 DEBUG   HandlerThread:13780 [handler.py:handle_request():144] handle_request: stop_status
+2023-07-20 14:27:08,467 DEBUG   SenderThread:13780 [sender.py:send_request():402] send_request: stop_status
+2023-07-20 14:27:10,984 INFO    Thread-17 :13780 [dir_watcher.py:_on_file_modified():295] file/dir modified: C:\Users\31083\Documents\GitHub\Project\CNC_YOLOV8_Segmodel\Code\yolo\wandb\run-20230720_141958-449vuo84\files\output.log
+2023-07-20 14:27:14,078 DEBUG   HandlerThread:13780 [handler.py:handle_request():144] handle_request: status_report
+2023-07-20 14:27:15,029 INFO    Thread-17 :13780 [dir_watcher.py:_on_file_modified():295] file/dir modified: C:\Users\31083\Documents\GitHub\Project\CNC_YOLOV8_Segmodel\Code\yolo\wandb\run-20230720_141958-449vuo84\files\output.log
+2023-07-20 14:27:19,076 INFO    Thread-17 :13780 [dir_watcher.py:_on_file_modified():295] file/dir modified: C:\Users\31083\Documents\GitHub\Project\CNC_YOLOV8_Segmodel\Code\yolo\wandb\run-20230720_141958-449vuo84\files\output.log
+2023-07-20 14:27:19,638 DEBUG   HandlerThread:13780 [handler.py:handle_request():144] handle_request: status_report
+2023-07-20 14:27:21,095 INFO    Thread-17 :13780 [dir_watcher.py:_on_file_modified():295] file/dir modified: C:\Users\31083\Documents\GitHub\Project\CNC_YOLOV8_Segmodel\Code\yolo\wandb\run-20230720_141958-449vuo84\files\output.log
+2023-07-20 14:27:22,653 DEBUG   HandlerThread:13780 [handler.py:handle_request():144] handle_request: partial_history
+2023-07-20 14:27:22,653 DEBUG   HandlerThread:13780 [handler.py:handle_request():144] handle_request: partial_history
+2023-07-20 14:27:22,654 DEBUG   SenderThread:13780 [sender.py:send():375] send: history
+2023-07-20 14:27:22,654 DEBUG   SenderThread:13780 [sender.py:send_request():402] send_request: summary_record
+2023-07-20 14:27:22,654 INFO    SenderThread:13780 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-07-20 14:27:23,109 INFO    Thread-17 :13780 [dir_watcher.py:_on_file_modified():295] file/dir modified: C:\Users\31083\Documents\GitHub\Project\CNC_YOLOV8_Segmodel\Code\yolo\wandb\run-20230720_141958-449vuo84\files\wandb-summary.json
+2023-07-20 14:27:23,482 DEBUG   HandlerThread:13780 [handler.py:handle_request():144] handle_request: stop_status
+2023-07-20 14:27:23,482 DEBUG   SenderThread:13780 [sender.py:send_request():402] send_request: stop_status
+2023-07-20 14:27:24,695 DEBUG   HandlerThread:13780 [handler.py:handle_request():144] handle_request: status_report
+2023-07-20 14:27:25,119 INFO    Thread-17 :13780 [dir_watcher.py:_on_file_modified():295] file/dir modified: C:\Users\31083\Documents\GitHub\Project\CNC_YOLOV8_Segmodel\Code\yolo\wandb\run-20230720_141958-449vuo84\files\output.log
+2023-07-20 14:27:26,332 DEBUG   HandlerThread:13780 [handler.py:handle_request():144] handle_request: partial_history
+2023-07-20 14:27:27,145 INFO    Thread-17 :13780 [dir_watcher.py:_on_file_modified():295] file/dir modified: C:\Users\31083\Documents\GitHub\Project\CNC_YOLOV8_Segmodel\Code\yolo\wandb\run-20230720_141958-449vuo84\files\output.log
+2023-07-20 14:27:29,170 INFO    Thread-17 :13780 [dir_watcher.py:_on_file_modified():295] file/dir modified: C:\Users\31083\Documents\GitHub\Project\CNC_YOLOV8_Segmodel\Code\yolo\wandb\run-20230720_141958-449vuo84\files\output.log
+2023-07-20 14:27:29,468 DEBUG   SenderThread:13780 [sender.py:send():375] send: stats
+2023-07-20 14:27:30,278 DEBUG   HandlerThread:13780 [handler.py:handle_request():144] handle_request: status_report
+2023-07-20 14:27:30,279 DEBUG   HandlerThread:13780 [handler.py:handle_request():144] handle_request: partial_history
+2023-07-20 14:27:31,194 INFO    Thread-17 :13780 [dir_watcher.py:_on_file_modified():295] file/dir modified: C:\Users\31083\Documents\GitHub\Project\CNC_YOLOV8_Segmodel\Code\yolo\wandb\run-20230720_141958-449vuo84\files\output.log
+2023-07-20 14:27:31,772 DEBUG   HandlerThread:13780 [handler.py:handle_request():144] handle_request: log_artifact
+2023-07-20 14:27:31,773 DEBUG   SenderThread:13780 [sender.py:send_request():402] send_request: log_artifact
+2023-07-20 14:27:33,261 INFO    memory    :13780 [interfaces.py:monitor():140] Process proc.memory.rssMB has exited.
+2023-07-20 14:27:33,261 DEBUG   SystemMonitor:13780 [system_monitor.py:_start():166] Finished system metrics aggregation loop
+2023-07-20 14:27:33,261 DEBUG   SystemMonitor:13780 [system_monitor.py:_start():170] Publishing last batch of metrics
+2023-07-20 14:27:35,189 INFO    wandb-upload_1:13780 [upload_job.py:push():95] Uploaded file C:\Users\31083\AppData\Local\wandb\wandb\artifacts\staging\tmpscyv77wh
+2023-07-20 14:27:36,120 INFO    SenderThread:13780 [sender.py:send_request_log_artifact():1438] logged artifact run_449vuo84_model - {'id': 'QXJ0aWZhY3Q6NTE3NTM0OTkw', 'digest': '241cfa8eae046323405329a95f860ce1', 'state': 'PENDING', 'aliases': [], 'artifactSequence': {'id': 'QXJ0aWZhY3RDb2xsZWN0aW9uOjg0NDA0MTQx', 'latestArtifact': None}, 'version': 'latest'}
+2023-07-20 14:27:36,120 DEBUG   SenderThread:13780 [sender.py:send():375] send: stats
+2023-07-20 14:27:36,120 DEBUG   HandlerThread:13780 [handler.py:handle_request():144] handle_request: status_report
+2023-07-20 14:27:41,159 DEBUG   HandlerThread:13780 [handler.py:handle_request():144] handle_request: status_report
+2023-07-20 14:27:46,213 DEBUG   HandlerThread:13780 [handler.py:handle_request():144] handle_request: status_report
+2023-07-20 14:27:51,261 DEBUG   HandlerThread:13780 [handler.py:handle_request():144] handle_request: status_report
+2023-07-20 14:27:56,317 DEBUG   HandlerThread:13780 [handler.py:handle_request():144] handle_request: status_report
+2023-07-20 14:28:01,366 DEBUG   HandlerThread:13780 [handler.py:handle_request():144] handle_request: status_report
+2023-07-20 14:28:06,398 DEBUG   HandlerThread:13780 [handler.py:handle_request():144] handle_request: status_report
+2023-07-20 14:28:11,430 DEBUG   HandlerThread:13780 [handler.py:handle_request():144] handle_request: status_report
+2023-07-20 14:28:16,471 DEBUG   HandlerThread:13780 [handler.py:handle_request():144] handle_request: status_report
+2023-07-20 14:28:21,492 DEBUG   HandlerThread:13780 [handler.py:handle_request():144] handle_request: status_report
+2023-07-20 14:28:26,517 DEBUG   HandlerThread:13780 [handler.py:handle_request():144] handle_request: status_report
+2023-07-20 14:28:31,549 DEBUG   HandlerThread:13780 [handler.py:handle_request():144] handle_request: status_report
+2023-07-20 14:28:36,579 DEBUG   HandlerThread:13780 [handler.py:handle_request():144] handle_request: status_report
+2023-07-20 14:28:41,606 DEBUG   HandlerThread:13780 [handler.py:handle_request():144] handle_request: status_report
+2023-07-20 14:28:46,623 DEBUG   HandlerThread:13780 [handler.py:handle_request():144] handle_request: status_report
+2023-07-20 14:28:51,645 DEBUG   HandlerThread:13780 [handler.py:handle_request():144] handle_request: status_report
+2023-07-20 14:28:56,680 DEBUG   HandlerThread:13780 [handler.py:handle_request():144] handle_request: status_report
+2023-07-20 14:29:01,725 DEBUG   HandlerThread:13780 [handler.py:handle_request():144] handle_request: status_report
+2023-07-20 14:29:06,746 DEBUG   HandlerThread:13780 [handler.py:handle_request():144] handle_request: status_report
+2023-07-20 14:29:11,791 DEBUG   HandlerThread:13780 [handler.py:handle_request():144] handle_request: status_report
+2023-07-20 14:29:16,823 DEBUG   HandlerThread:13780 [handler.py:handle_request():144] handle_request: status_report
+2023-07-20 14:29:21,847 DEBUG   HandlerThread:13780 [handler.py:handle_request():144] handle_request: status_report
+2023-07-20 14:29:26,899 DEBUG   HandlerThread:13780 [handler.py:handle_request():144] handle_request: status_report
+2023-07-20 14:29:31,959 DEBUG   HandlerThread:13780 [handler.py:handle_request():144] handle_request: status_report
+2023-07-20 14:29:36,993 DEBUG   HandlerThread:13780 [handler.py:handle_request():144] handle_request: status_report
+2023-07-20 14:29:42,048 DEBUG   HandlerThread:13780 [handler.py:handle_request():144] handle_request: status_report
+2023-07-20 14:29:47,083 DEBUG   HandlerThread:13780 [handler.py:handle_request():144] handle_request: status_report
+2023-07-20 14:29:52,138 DEBUG   HandlerThread:13780 [handler.py:handle_request():144] handle_request: status_report
+2023-07-20 14:29:57,188 DEBUG   HandlerThread:13780 [handler.py:handle_request():144] handle_request: status_report
+2023-07-20 14:30:02,223 DEBUG   HandlerThread:13780 [handler.py:handle_request():144] handle_request: status_report
+2023-07-20 14:30:07,243 DEBUG   HandlerThread:13780 [handler.py:handle_request():144] handle_request: status_report
+2023-07-20 14:30:12,291 DEBUG   HandlerThread:13780 [handler.py:handle_request():144] handle_request: status_report
+2023-07-20 14:30:17,341 DEBUG   HandlerThread:13780 [handler.py:handle_request():144] handle_request: status_report
+2023-07-20 14:30:22,388 DEBUG   HandlerThread:13780 [handler.py:handle_request():144] handle_request: status_report
+2023-07-20 14:30:27,427 DEBUG   HandlerThread:13780 [handler.py:handle_request():144] handle_request: status_report
+2023-07-20 14:30:32,470 DEBUG   HandlerThread:13780 [handler.py:handle_request():144] handle_request: status_report
+2023-07-20 14:30:37,483 DEBUG   HandlerThread:13780 [handler.py:handle_request():144] handle_request: status_report
+2023-07-20 14:30:42,517 DEBUG   HandlerThread:13780 [handler.py:handle_request():144] handle_request: status_report
+2023-07-20 14:30:47,551 DEBUG   HandlerThread:13780 [handler.py:handle_request():144] handle_request: status_report
+2023-07-20 14:30:52,567 DEBUG   HandlerThread:13780 [handler.py:handle_request():144] handle_request: status_report
+2023-07-20 14:30:57,603 DEBUG   HandlerThread:13780 [handler.py:handle_request():144] handle_request: status_report
+2023-07-20 14:31:02,628 DEBUG   HandlerThread:13780 [handler.py:handle_request():144] handle_request: status_report
+2023-07-20 14:31:07,683 DEBUG   HandlerThread:13780 [handler.py:handle_request():144] handle_request: status_report
+2023-07-20 14:31:12,719 DEBUG   HandlerThread:13780 [handler.py:handle_request():144] handle_request: status_report
+2023-07-20 14:31:17,756 DEBUG   HandlerThread:13780 [handler.py:handle_request():144] handle_request: status_report
+2023-07-20 14:31:22,799 DEBUG   HandlerThread:13780 [handler.py:handle_request():144] handle_request: status_report
+2023-07-20 14:31:27,840 DEBUG   HandlerThread:13780 [handler.py:handle_request():144] handle_request: status_report
+2023-07-20 14:31:32,880 DEBUG   HandlerThread:13780 [handler.py:handle_request():144] handle_request: status_report
+2023-07-20 14:31:37,891 DEBUG   HandlerThread:13780 [handler.py:handle_request():144] handle_request: status_report
+2023-07-20 14:31:42,912 DEBUG   HandlerThread:13780 [handler.py:handle_request():144] handle_request: status_report
+2023-07-20 14:31:47,954 DEBUG   HandlerThread:13780 [handler.py:handle_request():144] handle_request: status_report
+2023-07-20 14:31:52,973 DEBUG   HandlerThread:13780 [handler.py:handle_request():144] handle_request: status_report
+2023-07-20 14:31:57,997 DEBUG   HandlerThread:13780 [handler.py:handle_request():144] handle_request: status_report
+2023-07-20 14:32:03,023 DEBUG   HandlerThread:13780 [handler.py:handle_request():144] handle_request: status_report
+2023-07-20 14:32:08,071 DEBUG   HandlerThread:13780 [handler.py:handle_request():144] handle_request: status_report
+2023-07-20 14:32:13,092 DEBUG   HandlerThread:13780 [handler.py:handle_request():144] handle_request: status_report
+2023-07-20 14:32:18,129 DEBUG   HandlerThread:13780 [handler.py:handle_request():144] handle_request: status_report
+2023-07-20 14:32:23,191 DEBUG   HandlerThread:13780 [handler.py:handle_request():144] handle_request: status_report
+2023-07-20 14:32:28,240 DEBUG   HandlerThread:13780 [handler.py:handle_request():144] handle_request: status_report
+2023-07-20 14:32:33,267 DEBUG   HandlerThread:13780 [handler.py:handle_request():144] handle_request: status_report
+2023-07-20 14:32:38,305 DEBUG   HandlerThread:13780 [handler.py:handle_request():144] handle_request: status_report
+2023-07-20 14:32:43,340 DEBUG   HandlerThread:13780 [handler.py:handle_request():144] handle_request: status_report
+2023-07-20 14:32:48,386 DEBUG   HandlerThread:13780 [handler.py:handle_request():144] handle_request: status_report
+2023-07-20 14:32:53,430 DEBUG   HandlerThread:13780 [handler.py:handle_request():144] handle_request: status_report
+2023-07-20 14:32:58,470 DEBUG   HandlerThread:13780 [handler.py:handle_request():144] handle_request: status_report
+2023-07-20 14:33:03,520 DEBUG   HandlerThread:13780 [handler.py:handle_request():144] handle_request: status_report
+2023-07-20 14:33:08,554 DEBUG   HandlerThread:13780 [handler.py:handle_request():144] handle_request: status_report
+2023-07-20 14:33:13,610 DEBUG   HandlerThread:13780 [handler.py:handle_request():144] handle_request: status_report
+2023-07-20 14:33:18,654 DEBUG   HandlerThread:13780 [handler.py:handle_request():144] handle_request: status_report
+2023-07-20 14:33:23,674 DEBUG   HandlerThread:13780 [handler.py:handle_request():144] handle_request: status_report
+2023-07-20 14:33:28,712 DEBUG   HandlerThread:13780 [handler.py:handle_request():144] handle_request: status_report
+2023-07-20 14:33:33,760 DEBUG   HandlerThread:13780 [handler.py:handle_request():144] handle_request: status_report
+2023-07-20 14:33:38,800 DEBUG   HandlerThread:13780 [handler.py:handle_request():144] handle_request: status_report
+2023-07-20 14:33:43,853 DEBUG   HandlerThread:13780 [handler.py:handle_request():144] handle_request: status_report
+2023-07-20 14:33:48,871 DEBUG   HandlerThread:13780 [handler.py:handle_request():144] handle_request: status_report
+2023-07-20 14:33:53,891 DEBUG   HandlerThread:13780 [handler.py:handle_request():144] handle_request: status_report
+2023-07-20 14:33:58,926 DEBUG   HandlerThread:13780 [handler.py:handle_request():144] handle_request: status_report
+2023-07-20 14:34:03,960 DEBUG   HandlerThread:13780 [handler.py:handle_request():144] handle_request: status_report
+2023-07-20 14:34:09,027 DEBUG   HandlerThread:13780 [handler.py:handle_request():144] handle_request: status_report
+2023-07-20 14:34:14,054 DEBUG   HandlerThread:13780 [handler.py:handle_request():144] handle_request: status_report
+2023-07-20 14:34:19,129 DEBUG   HandlerThread:13780 [handler.py:handle_request():144] handle_request: status_report
+2023-07-20 14:34:24,198 DEBUG   HandlerThread:13780 [handler.py:handle_request():144] handle_request: status_report
+2023-07-20 14:34:29,236 DEBUG   HandlerThread:13780 [handler.py:handle_request():144] handle_request: status_report
+2023-07-20 14:34:34,285 DEBUG   HandlerThread:13780 [handler.py:handle_request():144] handle_request: status_report
+2023-07-20 14:34:39,329 DEBUG   HandlerThread:13780 [handler.py:handle_request():144] handle_request: status_report
+2023-07-20 14:34:44,363 DEBUG   HandlerThread:13780 [handler.py:handle_request():144] handle_request: status_report
+2023-07-20 14:34:49,433 DEBUG   HandlerThread:13780 [handler.py:handle_request():144] handle_request: status_report
+2023-07-20 14:34:54,488 DEBUG   HandlerThread:13780 [handler.py:handle_request():144] handle_request: status_report
+2023-07-20 14:34:59,520 DEBUG   HandlerThread:13780 [handler.py:handle_request():144] handle_request: status_report
+2023-07-20 14:35:04,565 DEBUG   HandlerThread:13780 [handler.py:handle_request():144] handle_request: status_report
+2023-07-20 14:35:09,587 DEBUG   HandlerThread:13780 [handler.py:handle_request():144] handle_request: status_report
+2023-07-20 14:35:14,632 DEBUG   HandlerThread:13780 [handler.py:handle_request():144] handle_request: status_report
+2023-07-20 14:35:19,679 DEBUG   HandlerThread:13780 [handler.py:handle_request():144] handle_request: status_report
+2023-07-20 14:35:24,698 DEBUG   HandlerThread:13780 [handler.py:handle_request():144] handle_request: status_report
+2023-07-20 14:35:29,722 DEBUG   HandlerThread:13780 [handler.py:handle_request():144] handle_request: status_report
+2023-07-20 14:35:34,752 DEBUG   HandlerThread:13780 [handler.py:handle_request():144] handle_request: status_report
+2023-07-20 14:35:39,772 DEBUG   HandlerThread:13780 [handler.py:handle_request():144] handle_request: status_report
+2023-07-20 14:35:44,819 DEBUG   HandlerThread:13780 [handler.py:handle_request():144] handle_request: status_report
+2023-07-20 14:35:49,859 DEBUG   HandlerThread:13780 [handler.py:handle_request():144] handle_request: status_report
+2023-07-20 14:35:54,903 DEBUG   HandlerThread:13780 [handler.py:handle_request():144] handle_request: status_report
+2023-07-20 14:35:59,943 DEBUG   HandlerThread:13780 [handler.py:handle_request():144] handle_request: status_report
+2023-07-20 14:36:04,989 DEBUG   HandlerThread:13780 [handler.py:handle_request():144] handle_request: status_report
+2023-07-20 14:36:10,008 DEBUG   HandlerThread:13780 [handler.py:handle_request():144] handle_request: status_report
+2023-07-20 14:36:15,049 DEBUG   HandlerThread:13780 [handler.py:handle_request():144] handle_request: status_report
+2023-07-20 14:36:20,092 DEBUG   HandlerThread:13780 [handler.py:handle_request():144] handle_request: status_report
+2023-07-20 14:36:25,166 DEBUG   HandlerThread:13780 [handler.py:handle_request():144] handle_request: status_report
+2023-07-20 14:36:30,185 DEBUG   HandlerThread:13780 [handler.py:handle_request():144] handle_request: status_report
+2023-07-20 14:36:35,237 DEBUG   HandlerThread:13780 [handler.py:handle_request():144] handle_request: status_report
+2023-07-20 14:36:40,248 DEBUG   HandlerThread:13780 [handler.py:handle_request():144] handle_request: status_report
+2023-07-20 14:36:45,296 DEBUG   HandlerThread:13780 [handler.py:handle_request():144] handle_request: status_report
+2023-07-20 14:36:50,315 DEBUG   HandlerThread:13780 [handler.py:handle_request():144] handle_request: status_report
+2023-07-20 14:36:55,351 DEBUG   HandlerThread:13780 [handler.py:handle_request():144] handle_request: status_report
+2023-07-20 14:37:00,400 DEBUG   HandlerThread:13780 [handler.py:handle_request():144] handle_request: status_report
+2023-07-20 14:37:05,429 DEBUG   HandlerThread:13780 [handler.py:handle_request():144] handle_request: status_report
+2023-07-20 14:37:10,454 DEBUG   HandlerThread:13780 [handler.py:handle_request():144] handle_request: status_report
+2023-07-20 14:37:15,501 DEBUG   HandlerThread:13780 [handler.py:handle_request():144] handle_request: status_report
+2023-07-20 14:37:20,537 DEBUG   HandlerThread:13780 [handler.py:handle_request():144] handle_request: status_report
+2023-07-20 14:37:25,573 DEBUG   HandlerThread:13780 [handler.py:handle_request():144] handle_request: status_report
+2023-07-20 14:37:30,610 DEBUG   HandlerThread:13780 [handler.py:handle_request():144] handle_request: status_report
+2023-07-20 14:37:35,660 DEBUG   HandlerThread:13780 [handler.py:handle_request():144] handle_request: status_report
+2023-07-20 14:37:40,721 DEBUG   HandlerThread:13780 [handler.py:handle_request():144] handle_request: status_report
+2023-07-20 14:37:45,741 DEBUG   HandlerThread:13780 [handler.py:handle_request():144] handle_request: status_report
+2023-07-20 14:37:50,767 DEBUG   HandlerThread:13780 [handler.py:handle_request():144] handle_request: status_report
+2023-07-20 14:37:55,804 DEBUG   HandlerThread:13780 [handler.py:handle_request():144] handle_request: status_report
+2023-07-20 14:38:00,818 DEBUG   HandlerThread:13780 [handler.py:handle_request():144] handle_request: status_report
+2023-07-20 14:38:05,867 DEBUG   HandlerThread:13780 [handler.py:handle_request():144] handle_request: status_report
+2023-07-20 14:38:10,909 DEBUG   HandlerThread:13780 [handler.py:handle_request():144] handle_request: status_report
+2023-07-20 14:38:15,936 DEBUG   HandlerThread:13780 [handler.py:handle_request():144] handle_request: status_report
+2023-07-20 14:38:20,984 DEBUG   HandlerThread:13780 [handler.py:handle_request():144] handle_request: status_report
+2023-07-20 14:38:26,040 DEBUG   HandlerThread:13780 [handler.py:handle_request():144] handle_request: status_report
+2023-07-20 14:38:31,078 DEBUG   HandlerThread:13780 [handler.py:handle_request():144] handle_request: status_report
+2023-07-20 14:38:36,111 DEBUG   HandlerThread:13780 [handler.py:handle_request():144] handle_request: status_report
+2023-07-20 14:38:41,148 DEBUG   HandlerThread:13780 [handler.py:handle_request():144] handle_request: status_report
+2023-07-20 14:38:46,175 DEBUG   HandlerThread:13780 [handler.py:handle_request():144] handle_request: status_report
+2023-07-20 14:38:51,199 DEBUG   HandlerThread:13780 [handler.py:handle_request():144] handle_request: status_report
+2023-07-20 14:38:56,206 DEBUG   HandlerThread:13780 [handler.py:handle_request():144] handle_request: status_report
+2023-07-20 14:39:01,256 DEBUG   HandlerThread:13780 [handler.py:handle_request():144] handle_request: status_report
+2023-07-20 14:39:06,294 DEBUG   HandlerThread:13780 [handler.py:handle_request():144] handle_request: status_report
+2023-07-20 14:39:11,333 DEBUG   HandlerThread:13780 [handler.py:handle_request():144] handle_request: status_report
+2023-07-20 14:39:16,368 DEBUG   HandlerThread:13780 [handler.py:handle_request():144] handle_request: status_report
+2023-07-20 14:39:21,396 DEBUG   HandlerThread:13780 [handler.py:handle_request():144] handle_request: status_report
+2023-07-20 14:39:26,441 DEBUG   HandlerThread:13780 [handler.py:handle_request():144] handle_request: status_report
+2023-07-20 14:39:31,474 DEBUG   HandlerThread:13780 [handler.py:handle_request():144] handle_request: status_report
+2023-07-20 14:39:36,512 DEBUG   HandlerThread:13780 [handler.py:handle_request():144] handle_request: status_report
+2023-07-20 14:39:41,562 DEBUG   HandlerThread:13780 [handler.py:handle_request():144] handle_request: status_report
+2023-07-20 14:39:46,611 DEBUG   HandlerThread:13780 [handler.py:handle_request():144] handle_request: status_report
+2023-07-20 14:39:51,662 DEBUG   HandlerThread:13780 [handler.py:handle_request():144] handle_request: status_report
+2023-07-20 14:39:56,694 DEBUG   HandlerThread:13780 [handler.py:handle_request():144] handle_request: status_report
+2023-07-20 14:40:01,747 DEBUG   HandlerThread:13780 [handler.py:handle_request():144] handle_request: status_report
+2023-07-20 14:40:06,784 DEBUG   HandlerThread:13780 [handler.py:handle_request():144] handle_request: status_report
+2023-07-20 14:40:11,816 DEBUG   HandlerThread:13780 [handler.py:handle_request():144] handle_request: status_report
+2023-07-20 14:40:16,843 DEBUG   HandlerThread:13780 [handler.py:handle_request():144] handle_request: status_report
+2023-07-20 14:40:21,877 DEBUG   HandlerThread:13780 [handler.py:handle_request():144] handle_request: status_report
+2023-07-20 14:40:26,911 DEBUG   HandlerThread:13780 [handler.py:handle_request():144] handle_request: status_report
+2023-07-20 14:40:31,962 DEBUG   HandlerThread:13780 [handler.py:handle_request():144] handle_request: status_report
+2023-07-20 14:40:36,990 DEBUG   HandlerThread:13780 [handler.py:handle_request():144] handle_request: status_report
+2023-07-20 14:40:42,016 DEBUG   HandlerThread:13780 [handler.py:handle_request():144] handle_request: status_report
+2023-07-20 14:40:47,056 DEBUG   HandlerThread:13780 [handler.py:handle_request():144] handle_request: status_report
+2023-07-20 14:40:52,098 DEBUG   HandlerThread:13780 [handler.py:handle_request():144] handle_request: status_report
+2023-07-20 14:40:57,147 DEBUG   HandlerThread:13780 [handler.py:handle_request():144] handle_request: status_report
+2023-07-20 14:41:02,198 DEBUG   HandlerThread:13780 [handler.py:handle_request():144] handle_request: status_report
+2023-07-20 14:41:07,247 DEBUG   HandlerThread:13780 [handler.py:handle_request():144] handle_request: status_report
+2023-07-20 14:41:12,283 DEBUG   HandlerThread:13780 [handler.py:handle_request():144] handle_request: status_report
+2023-07-20 14:41:17,328 DEBUG   HandlerThread:13780 [handler.py:handle_request():144] handle_request: status_report
+2023-07-20 14:41:22,356 DEBUG   HandlerThread:13780 [handler.py:handle_request():144] handle_request: status_report
+2023-07-20 14:41:27,391 DEBUG   HandlerThread:13780 [handler.py:handle_request():144] handle_request: status_report
+2023-07-20 14:41:32,430 DEBUG   HandlerThread:13780 [handler.py:handle_request():144] handle_request: status_report
+2023-07-20 14:41:37,476 DEBUG   HandlerThread:13780 [handler.py:handle_request():144] handle_request: status_report
+2023-07-20 14:41:42,525 DEBUG   HandlerThread:13780 [handler.py:handle_request():144] handle_request: status_report
+2023-07-20 14:41:47,547 DEBUG   HandlerThread:13780 [handler.py:handle_request():144] handle_request: status_report
+2023-07-20 14:41:52,591 DEBUG   HandlerThread:13780 [handler.py:handle_request():144] handle_request: status_report
+2023-07-20 14:41:57,615 DEBUG   HandlerThread:13780 [handler.py:handle_request():144] handle_request: status_report
+2023-07-20 14:42:02,651 DEBUG   HandlerThread:13780 [handler.py:handle_request():144] handle_request: status_report
+2023-07-20 14:42:07,699 DEBUG   HandlerThread:13780 [handler.py:handle_request():144] handle_request: status_report
+2023-07-20 14:42:12,730 DEBUG   HandlerThread:13780 [handler.py:handle_request():144] handle_request: status_report
+2023-07-20 14:42:17,788 DEBUG   HandlerThread:13780 [handler.py:handle_request():144] handle_request: status_report
+2023-07-20 14:42:22,830 DEBUG   HandlerThread:13780 [handler.py:handle_request():144] handle_request: status_report
+2023-07-20 14:42:27,841 DEBUG   HandlerThread:13780 [handler.py:handle_request():144] handle_request: status_report
+2023-07-20 14:42:32,869 DEBUG   HandlerThread:13780 [handler.py:handle_request():144] handle_request: status_report
+2023-07-20 14:42:37,941 DEBUG   HandlerThread:13780 [handler.py:handle_request():144] handle_request: status_report
+2023-07-20 14:42:42,971 DEBUG   HandlerThread:13780 [handler.py:handle_request():144] handle_request: status_report
+2023-07-20 14:42:48,022 DEBUG   HandlerThread:13780 [handler.py:handle_request():144] handle_request: status_report
+2023-07-20 14:42:53,066 DEBUG   HandlerThread:13780 [handler.py:handle_request():144] handle_request: status_report
+2023-07-20 14:42:58,101 DEBUG   HandlerThread:13780 [handler.py:handle_request():144] handle_request: status_report
+2023-07-20 14:43:03,160 DEBUG   HandlerThread:13780 [handler.py:handle_request():144] handle_request: status_report
+2023-07-20 14:43:08,207 DEBUG   HandlerThread:13780 [handler.py:handle_request():144] handle_request: status_report
+2023-07-20 14:43:13,260 DEBUG   HandlerThread:13780 [handler.py:handle_request():144] handle_request: status_report
+2023-07-20 14:43:18,296 DEBUG   HandlerThread:13780 [handler.py:handle_request():144] handle_request: status_report
+2023-07-20 14:43:23,346 DEBUG   HandlerThread:13780 [handler.py:handle_request():144] handle_request: status_report
+2023-07-20 14:43:28,386 DEBUG   HandlerThread:13780 [handler.py:handle_request():144] handle_request: status_report
+2023-07-20 14:43:33,443 DEBUG   HandlerThread:13780 [handler.py:handle_request():144] handle_request: status_report
+2023-07-20 14:43:38,506 DEBUG   HandlerThread:13780 [handler.py:handle_request():144] handle_request: status_report
+2023-07-20 14:43:43,524 DEBUG   HandlerThread:13780 [handler.py:handle_request():144] handle_request: status_report
+2023-07-20 14:43:48,575 DEBUG   HandlerThread:13780 [handler.py:handle_request():144] handle_request: status_report
+2023-07-20 14:43:53,594 DEBUG   HandlerThread:13780 [handler.py:handle_request():144] handle_request: status_report
+2023-07-20 14:43:58,615 DEBUG   HandlerThread:13780 [handler.py:handle_request():144] handle_request: status_report
+2023-07-20 14:44:03,672 DEBUG   HandlerThread:13780 [handler.py:handle_request():144] handle_request: status_report
+2023-07-20 14:44:08,705 DEBUG   HandlerThread:13780 [handler.py:handle_request():144] handle_request: status_report
+2023-07-20 14:44:13,758 DEBUG   HandlerThread:13780 [handler.py:handle_request():144] handle_request: status_report
+2023-07-20 14:44:18,775 DEBUG   HandlerThread:13780 [handler.py:handle_request():144] handle_request: status_report
+2023-07-20 14:44:23,801 DEBUG   HandlerThread:13780 [handler.py:handle_request():144] handle_request: status_report
+2023-07-20 14:44:28,814 DEBUG   HandlerThread:13780 [handler.py:handle_request():144] handle_request: status_report
+2023-07-20 14:44:33,826 DEBUG   HandlerThread:13780 [handler.py:handle_request():144] handle_request: status_report
+2023-07-20 14:44:38,860 DEBUG   HandlerThread:13780 [handler.py:handle_request():144] handle_request: status_report
+2023-07-20 14:44:43,873 DEBUG   HandlerThread:13780 [handler.py:handle_request():144] handle_request: status_report
+2023-07-20 14:44:48,889 DEBUG   HandlerThread:13780 [handler.py:handle_request():144] handle_request: status_report
+2023-07-20 14:44:53,932 DEBUG   HandlerThread:13780 [handler.py:handle_request():144] handle_request: status_report
+2023-07-20 14:44:58,944 DEBUG   HandlerThread:13780 [handler.py:handle_request():144] handle_request: status_report
+2023-07-20 14:45:03,960 DEBUG   HandlerThread:13780 [handler.py:handle_request():144] handle_request: status_report
+2023-07-20 14:45:08,981 DEBUG   HandlerThread:13780 [handler.py:handle_request():144] handle_request: status_report
+2023-07-20 14:45:14,013 DEBUG   HandlerThread:13780 [handler.py:handle_request():144] handle_request: status_report
+2023-07-20 14:45:19,038 DEBUG   HandlerThread:13780 [handler.py:handle_request():144] handle_request: status_report
+2023-07-20 14:45:24,082 DEBUG   HandlerThread:13780 [handler.py:handle_request():144] handle_request: status_report
+2023-07-20 14:45:29,095 DEBUG   HandlerThread:13780 [handler.py:handle_request():144] handle_request: status_report
+2023-07-20 14:45:34,106 DEBUG   HandlerThread:13780 [handler.py:handle_request():144] handle_request: status_report
+2023-07-20 14:45:39,134 DEBUG   HandlerThread:13780 [handler.py:handle_request():144] handle_request: status_report
+2023-07-20 14:45:44,148 DEBUG   HandlerThread:13780 [handler.py:handle_request():144] handle_request: status_report
+2023-07-20 14:45:49,165 DEBUG   HandlerThread:13780 [handler.py:handle_request():144] handle_request: status_report
+2023-07-20 14:45:54,177 DEBUG   HandlerThread:13780 [handler.py:handle_request():144] handle_request: status_report
+2023-07-20 14:45:59,201 DEBUG   HandlerThread:13780 [handler.py:handle_request():144] handle_request: status_report
+2023-07-20 14:46:04,242 DEBUG   HandlerThread:13780 [handler.py:handle_request():144] handle_request: status_report
+2023-07-20 14:46:09,290 DEBUG   HandlerThread:13780 [handler.py:handle_request():144] handle_request: status_report
+2023-07-20 14:46:14,318 DEBUG   HandlerThread:13780 [handler.py:handle_request():144] handle_request: status_report
+2023-07-20 14:46:19,342 DEBUG   HandlerThread:13780 [handler.py:handle_request():144] handle_request: status_report
+2023-07-20 14:46:24,405 DEBUG   HandlerThread:13780 [handler.py:handle_request():144] handle_request: status_report
+2023-07-20 14:46:29,439 DEBUG   HandlerThread:13780 [handler.py:handle_request():144] handle_request: status_report
+2023-07-20 14:46:34,473 DEBUG   HandlerThread:13780 [handler.py:handle_request():144] handle_request: status_report
+2023-07-20 14:46:39,509 DEBUG   HandlerThread:13780 [handler.py:handle_request():144] handle_request: status_report
+2023-07-20 14:46:44,563 DEBUG   HandlerThread:13780 [handler.py:handle_request():144] handle_request: status_report
+2023-07-20 14:46:49,599 DEBUG   HandlerThread:13780 [handler.py:handle_request():144] handle_request: status_report
+2023-07-20 14:46:54,640 DEBUG   HandlerThread:13780 [handler.py:handle_request():144] handle_request: status_report
+2023-07-20 14:46:59,688 DEBUG   HandlerThread:13780 [handler.py:handle_request():144] handle_request: status_report
+2023-07-20 14:47:04,730 DEBUG   HandlerThread:13780 [handler.py:handle_request():144] handle_request: status_report
+2023-07-20 14:47:09,756 DEBUG   HandlerThread:13780 [handler.py:handle_request():144] handle_request: status_report
+2023-07-20 14:47:14,778 DEBUG   HandlerThread:13780 [handler.py:handle_request():144] handle_request: status_report
+2023-07-20 14:47:19,801 DEBUG   HandlerThread:13780 [handler.py:handle_request():144] handle_request: status_report
+2023-07-20 14:47:24,847 DEBUG   HandlerThread:13780 [handler.py:handle_request():144] handle_request: status_report
+2023-07-20 14:47:29,874 DEBUG   HandlerThread:13780 [handler.py:handle_request():144] handle_request: status_report
+2023-07-20 14:47:34,913 DEBUG   HandlerThread:13780 [handler.py:handle_request():144] handle_request: status_report
+2023-07-20 14:47:39,957 DEBUG   HandlerThread:13780 [handler.py:handle_request():144] handle_request: status_report
+2023-07-20 14:47:44,990 DEBUG   HandlerThread:13780 [handler.py:handle_request():144] handle_request: status_report
+2023-07-20 14:47:50,015 DEBUG   HandlerThread:13780 [handler.py:handle_request():144] handle_request: status_report
+2023-07-20 14:47:55,031 DEBUG   HandlerThread:13780 [handler.py:handle_request():144] handle_request: status_report
+2023-07-20 14:48:00,054 DEBUG   HandlerThread:13780 [handler.py:handle_request():144] handle_request: status_report
+2023-07-20 14:48:05,083 DEBUG   HandlerThread:13780 [handler.py:handle_request():144] handle_request: status_report
+2023-07-20 14:48:10,100 DEBUG   HandlerThread:13780 [handler.py:handle_request():144] handle_request: status_report
+2023-07-20 14:48:15,127 DEBUG   HandlerThread:13780 [handler.py:handle_request():144] handle_request: status_report
+2023-07-20 14:48:20,158 DEBUG   HandlerThread:13780 [handler.py:handle_request():144] handle_request: status_report
+2023-07-20 14:48:25,188 DEBUG   HandlerThread:13780 [handler.py:handle_request():144] handle_request: status_report
+2023-07-20 14:48:30,221 DEBUG   HandlerThread:13780 [handler.py:handle_request():144] handle_request: status_report
+2023-07-20 14:48:35,272 DEBUG   HandlerThread:13780 [handler.py:handle_request():144] handle_request: status_report
+2023-07-20 14:48:40,320 DEBUG   HandlerThread:13780 [handler.py:handle_request():144] handle_request: status_report
+2023-07-20 14:48:45,334 DEBUG   HandlerThread:13780 [handler.py:handle_request():144] handle_request: status_report
+2023-07-20 14:48:50,357 DEBUG   HandlerThread:13780 [handler.py:handle_request():144] handle_request: status_report
+2023-07-20 14:48:55,404 DEBUG   HandlerThread:13780 [handler.py:handle_request():144] handle_request: status_report
+2023-07-20 14:49:00,437 DEBUG   HandlerThread:13780 [handler.py:handle_request():144] handle_request: status_report
+2023-07-20 14:49:05,456 DEBUG   HandlerThread:13780 [handler.py:handle_request():144] handle_request: status_report
+2023-07-20 14:49:10,487 DEBUG   HandlerThread:13780 [handler.py:handle_request():144] handle_request: status_report
+2023-07-20 14:49:15,539 DEBUG   HandlerThread:13780 [handler.py:handle_request():144] handle_request: status_report
+2023-07-20 14:49:20,580 DEBUG   HandlerThread:13780 [handler.py:handle_request():144] handle_request: status_report
+2023-07-20 14:49:25,617 DEBUG   HandlerThread:13780 [handler.py:handle_request():144] handle_request: status_report
+2023-07-20 14:49:30,641 DEBUG   HandlerThread:13780 [handler.py:handle_request():144] handle_request: status_report
+2023-07-20 14:49:35,678 DEBUG   HandlerThread:13780 [handler.py:handle_request():144] handle_request: status_report
+2023-07-20 14:49:40,724 DEBUG   HandlerThread:13780 [handler.py:handle_request():144] handle_request: status_report
+2023-07-20 14:49:45,753 DEBUG   HandlerThread:13780 [handler.py:handle_request():144] handle_request: status_report
+2023-07-20 14:49:50,771 DEBUG   HandlerThread:13780 [handler.py:handle_request():144] handle_request: status_report
+2023-07-20 14:49:55,790 DEBUG   HandlerThread:13780 [handler.py:handle_request():144] handle_request: status_report
+2023-07-20 14:50:00,843 DEBUG   HandlerThread:13780 [handler.py:handle_request():144] handle_request: status_report
+2023-07-20 14:50:05,874 DEBUG   HandlerThread:13780 [handler.py:handle_request():144] handle_request: status_report
+2023-07-20 14:50:10,905 DEBUG   HandlerThread:13780 [handler.py:handle_request():144] handle_request: status_report
+2023-07-20 14:50:15,935 DEBUG   HandlerThread:13780 [handler.py:handle_request():144] handle_request: status_report
+2023-07-20 14:50:20,968 DEBUG   HandlerThread:13780 [handler.py:handle_request():144] handle_request: status_report
+2023-07-20 14:50:26,011 DEBUG   HandlerThread:13780 [handler.py:handle_request():144] handle_request: status_report
+2023-07-20 14:50:31,047 DEBUG   HandlerThread:13780 [handler.py:handle_request():144] handle_request: status_report
+2023-07-20 14:50:36,102 DEBUG   HandlerThread:13780 [handler.py:handle_request():144] handle_request: status_report
+2023-07-20 14:50:41,159 DEBUG   HandlerThread:13780 [handler.py:handle_request():144] handle_request: status_report
+2023-07-20 14:50:46,193 DEBUG   HandlerThread:13780 [handler.py:handle_request():144] handle_request: status_report
+2023-07-20 14:50:51,232 DEBUG   HandlerThread:13780 [handler.py:handle_request():144] handle_request: status_report
+2023-07-20 14:50:56,264 DEBUG   HandlerThread:13780 [handler.py:handle_request():144] handle_request: status_report
+2023-07-20 14:51:01,304 DEBUG   HandlerThread:13780 [handler.py:handle_request():144] handle_request: status_report
+2023-07-20 14:51:06,342 DEBUG   HandlerThread:13780 [handler.py:handle_request():144] handle_request: status_report
+2023-07-20 14:51:11,391 DEBUG   HandlerThread:13780 [handler.py:handle_request():144] handle_request: status_report
+2023-07-20 14:51:16,433 DEBUG   HandlerThread:13780 [handler.py:handle_request():144] handle_request: status_report
+2023-07-20 14:51:21,490 DEBUG   HandlerThread:13780 [handler.py:handle_request():144] handle_request: status_report
+2023-07-20 14:51:26,532 DEBUG   HandlerThread:13780 [handler.py:handle_request():144] handle_request: status_report
+2023-07-20 14:51:31,592 DEBUG   HandlerThread:13780 [handler.py:handle_request():144] handle_request: status_report
+2023-07-20 14:51:36,632 DEBUG   HandlerThread:13780 [handler.py:handle_request():144] handle_request: status_report
+2023-07-20 14:51:41,670 DEBUG   HandlerThread:13780 [handler.py:handle_request():144] handle_request: status_report
+2023-07-20 14:51:46,695 DEBUG   HandlerThread:13780 [handler.py:handle_request():144] handle_request: status_report
+2023-07-20 14:51:51,721 DEBUG   HandlerThread:13780 [handler.py:handle_request():144] handle_request: status_report
+2023-07-20 14:51:56,750 DEBUG   HandlerThread:13780 [handler.py:handle_request():144] handle_request: status_report
+2023-07-20 14:52:01,783 DEBUG   HandlerThread:13780 [handler.py:handle_request():144] handle_request: status_report
+2023-07-20 14:52:06,836 DEBUG   HandlerThread:13780 [handler.py:handle_request():144] handle_request: status_report
+2023-07-20 14:52:11,863 DEBUG   HandlerThread:13780 [handler.py:handle_request():144] handle_request: status_report
+2023-07-20 14:52:16,894 DEBUG   HandlerThread:13780 [handler.py:handle_request():144] handle_request: status_report
+2023-07-20 14:52:21,919 DEBUG   HandlerThread:13780 [handler.py:handle_request():144] handle_request: status_report
+2023-07-20 14:52:26,960 DEBUG   HandlerThread:13780 [handler.py:handle_request():144] handle_request: status_report
+2023-07-20 14:52:32,022 DEBUG   HandlerThread:13780 [handler.py:handle_request():144] handle_request: status_report
+2023-07-20 14:52:37,075 DEBUG   HandlerThread:13780 [handler.py:handle_request():144] handle_request: status_report
+2023-07-20 14:52:42,113 DEBUG   HandlerThread:13780 [handler.py:handle_request():144] handle_request: status_report
+2023-07-20 14:52:47,153 DEBUG   HandlerThread:13780 [handler.py:handle_request():144] handle_request: status_report
+2023-07-20 14:52:52,211 DEBUG   HandlerThread:13780 [handler.py:handle_request():144] handle_request: status_report
+2023-07-20 14:52:57,264 DEBUG   HandlerThread:13780 [handler.py:handle_request():144] handle_request: status_report
+2023-07-20 14:53:02,309 DEBUG   HandlerThread:13780 [handler.py:handle_request():144] handle_request: status_report
+2023-07-20 14:53:07,361 DEBUG   HandlerThread:13780 [handler.py:handle_request():144] handle_request: status_report
+2023-07-20 14:53:12,409 DEBUG   HandlerThread:13780 [handler.py:handle_request():144] handle_request: status_report
+2023-07-20 14:53:17,442 DEBUG   HandlerThread:13780 [handler.py:handle_request():144] handle_request: status_report
+2023-07-20 14:53:22,472 DEBUG   HandlerThread:13780 [handler.py:handle_request():144] handle_request: status_report
+2023-07-20 14:53:27,510 DEBUG   HandlerThread:13780 [handler.py:handle_request():144] handle_request: status_report
+2023-07-20 14:53:32,551 DEBUG   HandlerThread:13780 [handler.py:handle_request():144] handle_request: status_report
+2023-07-20 14:53:37,587 DEBUG   HandlerThread:13780 [handler.py:handle_request():144] handle_request: status_report
+2023-07-20 14:53:42,637 DEBUG   HandlerThread:13780 [handler.py:handle_request():144] handle_request: status_report
+2023-07-20 14:53:47,674 DEBUG   HandlerThread:13780 [handler.py:handle_request():144] handle_request: status_report
+2023-07-20 14:53:52,703 DEBUG   HandlerThread:13780 [handler.py:handle_request():144] handle_request: status_report
+2023-07-20 14:53:57,728 DEBUG   HandlerThread:13780 [handler.py:handle_request():144] handle_request: status_report
+2023-07-20 14:54:02,785 DEBUG   HandlerThread:13780 [handler.py:handle_request():144] handle_request: status_report
+2023-07-20 14:54:07,828 DEBUG   HandlerThread:13780 [handler.py:handle_request():144] handle_request: status_report
+2023-07-20 14:54:12,870 DEBUG   HandlerThread:13780 [handler.py:handle_request():144] handle_request: status_report
+2023-07-20 14:54:17,907 DEBUG   HandlerThread:13780 [handler.py:handle_request():144] handle_request: status_report
+2023-07-20 14:54:22,947 DEBUG   HandlerThread:13780 [handler.py:handle_request():144] handle_request: status_report
+2023-07-20 14:54:27,999 DEBUG   HandlerThread:13780 [handler.py:handle_request():144] handle_request: status_report
+2023-07-20 14:54:33,025 DEBUG   HandlerThread:13780 [handler.py:handle_request():144] handle_request: status_report
+2023-07-20 14:54:38,056 DEBUG   HandlerThread:13780 [handler.py:handle_request():144] handle_request: status_report
+2023-07-20 14:54:43,081 DEBUG   HandlerThread:13780 [handler.py:handle_request():144] handle_request: status_report
+2023-07-20 14:54:48,128 DEBUG   HandlerThread:13780 [handler.py:handle_request():144] handle_request: status_report
+2023-07-20 14:54:53,155 DEBUG   HandlerThread:13780 [handler.py:handle_request():144] handle_request: status_report
+2023-07-20 14:54:58,197 DEBUG   HandlerThread:13780 [handler.py:handle_request():144] handle_request: status_report
+2023-07-20 14:55:03,224 DEBUG   HandlerThread:13780 [handler.py:handle_request():144] handle_request: status_report
+2023-07-20 14:55:08,266 DEBUG   HandlerThread:13780 [handler.py:handle_request():144] handle_request: status_report
+2023-07-20 14:55:13,299 DEBUG   HandlerThread:13780 [handler.py:handle_request():144] handle_request: status_report
+2023-07-20 14:55:18,335 DEBUG   HandlerThread:13780 [handler.py:handle_request():144] handle_request: status_report
+2023-07-20 14:55:23,387 DEBUG   HandlerThread:13780 [handler.py:handle_request():144] handle_request: status_report
+2023-07-20 14:55:28,436 DEBUG   HandlerThread:13780 [handler.py:handle_request():144] handle_request: status_report
+2023-07-20 14:55:33,487 DEBUG   HandlerThread:13780 [handler.py:handle_request():144] handle_request: status_report
+2023-07-20 14:55:38,524 DEBUG   HandlerThread:13780 [handler.py:handle_request():144] handle_request: status_report
+2023-07-20 14:55:43,566 DEBUG   HandlerThread:13780 [handler.py:handle_request():144] handle_request: status_report
+2023-07-20 14:55:48,610 DEBUG   HandlerThread:13780 [handler.py:handle_request():144] handle_request: status_report
+2023-07-20 14:55:53,642 DEBUG   HandlerThread:13780 [handler.py:handle_request():144] handle_request: status_report
+2023-07-20 14:55:58,682 DEBUG   HandlerThread:13780 [handler.py:handle_request():144] handle_request: status_report
+2023-07-20 14:56:03,720 DEBUG   HandlerThread:13780 [handler.py:handle_request():144] handle_request: status_report
+2023-07-20 14:56:08,748 DEBUG   HandlerThread:13780 [handler.py:handle_request():144] handle_request: status_report
+2023-07-20 14:56:13,776 DEBUG   HandlerThread:13780 [handler.py:handle_request():144] handle_request: status_report
+2023-07-20 14:56:18,786 DEBUG   HandlerThread:13780 [handler.py:handle_request():144] handle_request: status_report
+2023-07-20 14:56:23,817 DEBUG   HandlerThread:13780 [handler.py:handle_request():144] handle_request: status_report
+2023-07-20 14:56:28,863 DEBUG   HandlerThread:13780 [handler.py:handle_request():144] handle_request: status_report
+2023-07-20 14:56:33,885 DEBUG   HandlerThread:13780 [handler.py:handle_request():144] handle_request: status_report
+2023-07-20 14:56:38,910 DEBUG   HandlerThread:13780 [handler.py:handle_request():144] handle_request: status_report
+2023-07-20 14:56:43,935 DEBUG   HandlerThread:13780 [handler.py:handle_request():144] handle_request: status_report
+2023-07-20 14:56:48,957 DEBUG   HandlerThread:13780 [handler.py:handle_request():144] handle_request: status_report
+2023-07-20 14:56:53,976 DEBUG   HandlerThread:13780 [handler.py:handle_request():144] handle_request: status_report
+2023-07-20 14:56:59,022 DEBUG   HandlerThread:13780 [handler.py:handle_request():144] handle_request: status_report
+2023-07-20 14:57:04,086 DEBUG   HandlerThread:13780 [handler.py:handle_request():144] handle_request: status_report
+2023-07-20 14:57:09,114 DEBUG   HandlerThread:13780 [handler.py:handle_request():144] handle_request: status_report
+2023-07-20 14:57:14,162 DEBUG   HandlerThread:13780 [handler.py:handle_request():144] handle_request: status_report
+2023-07-20 14:57:19,200 DEBUG   HandlerThread:13780 [handler.py:handle_request():144] handle_request: status_report
+2023-07-20 14:57:24,208 DEBUG   HandlerThread:13780 [handler.py:handle_request():144] handle_request: status_report
+2023-07-20 14:57:29,238 DEBUG   HandlerThread:13780 [handler.py:handle_request():144] handle_request: status_report
+2023-07-20 14:57:34,271 DEBUG   HandlerThread:13780 [handler.py:handle_request():144] handle_request: status_report
+2023-07-20 14:57:39,306 DEBUG   HandlerThread:13780 [handler.py:handle_request():144] handle_request: status_report
+2023-07-20 14:57:44,347 DEBUG   HandlerThread:13780 [handler.py:handle_request():144] handle_request: status_report
+2023-07-20 14:57:49,369 DEBUG   HandlerThread:13780 [handler.py:handle_request():144] handle_request: status_report
+2023-07-20 14:57:54,391 DEBUG   HandlerThread:13780 [handler.py:handle_request():144] handle_request: status_report
+2023-07-20 14:57:59,434 DEBUG   HandlerThread:13780 [handler.py:handle_request():144] handle_request: status_report
+2023-07-20 14:58:04,472 DEBUG   HandlerThread:13780 [handler.py:handle_request():144] handle_request: status_report
+2023-07-20 14:58:09,516 DEBUG   HandlerThread:13780 [handler.py:handle_request():144] handle_request: status_report
+2023-07-20 14:58:14,573 DEBUG   HandlerThread:13780 [handler.py:handle_request():144] handle_request: status_report
+2023-07-20 14:58:19,603 DEBUG   HandlerThread:13780 [handler.py:handle_request():144] handle_request: status_report
+2023-07-20 14:58:24,656 DEBUG   HandlerThread:13780 [handler.py:handle_request():144] handle_request: status_report
+2023-07-20 14:58:29,715 DEBUG   HandlerThread:13780 [handler.py:handle_request():144] handle_request: status_report
+2023-07-20 14:58:34,741 DEBUG   HandlerThread:13780 [handler.py:handle_request():144] handle_request: status_report
+2023-07-20 14:58:39,787 DEBUG   HandlerThread:13780 [handler.py:handle_request():144] handle_request: status_report
+2023-07-20 14:58:44,819 DEBUG   HandlerThread:13780 [handler.py:handle_request():144] handle_request: status_report
+2023-07-20 14:58:49,855 DEBUG   HandlerThread:13780 [handler.py:handle_request():144] handle_request: status_report
+2023-07-20 14:58:54,899 DEBUG   HandlerThread:13780 [handler.py:handle_request():144] handle_request: status_report
+2023-07-20 14:58:59,948 DEBUG   HandlerThread:13780 [handler.py:handle_request():144] handle_request: status_report
+2023-07-20 14:59:04,980 DEBUG   HandlerThread:13780 [handler.py:handle_request():144] handle_request: status_report
+2023-07-20 14:59:10,016 DEBUG   HandlerThread:13780 [handler.py:handle_request():144] handle_request: status_report
+2023-07-20 14:59:15,042 DEBUG   HandlerThread:13780 [handler.py:handle_request():144] handle_request: status_report
+2023-07-20 14:59:20,076 DEBUG   HandlerThread:13780 [handler.py:handle_request():144] handle_request: status_report
+2023-07-20 14:59:25,123 DEBUG   HandlerThread:13780 [handler.py:handle_request():144] handle_request: status_report
+2023-07-20 14:59:30,181 DEBUG   HandlerThread:13780 [handler.py:handle_request():144] handle_request: status_report
+2023-07-20 14:59:35,227 DEBUG   HandlerThread:13780 [handler.py:handle_request():144] handle_request: status_report
+2023-07-20 14:59:40,257 DEBUG   HandlerThread:13780 [handler.py:handle_request():144] handle_request: status_report
+2023-07-20 14:59:45,283 DEBUG   HandlerThread:13780 [handler.py:handle_request():144] handle_request: status_report
+2023-07-20 14:59:50,314 DEBUG   HandlerThread:13780 [handler.py:handle_request():144] handle_request: status_report
+2023-07-20 14:59:55,355 DEBUG   HandlerThread:13780 [handler.py:handle_request():144] handle_request: status_report
+2023-07-20 15:00:00,392 DEBUG   HandlerThread:13780 [handler.py:handle_request():144] handle_request: status_report
+2023-07-20 15:00:05,426 DEBUG   HandlerThread:13780 [handler.py:handle_request():144] handle_request: status_report
+2023-07-20 15:00:10,483 DEBUG   HandlerThread:13780 [handler.py:handle_request():144] handle_request: status_report
+2023-07-20 15:00:15,512 DEBUG   HandlerThread:13780 [handler.py:handle_request():144] handle_request: status_report
+2023-07-20 15:00:20,544 DEBUG   HandlerThread:13780 [handler.py:handle_request():144] handle_request: status_report
+2023-07-20 15:00:25,574 DEBUG   HandlerThread:13780 [handler.py:handle_request():144] handle_request: status_report
+2023-07-20 15:00:30,603 DEBUG   HandlerThread:13780 [handler.py:handle_request():144] handle_request: status_report
+2023-07-20 15:00:35,650 DEBUG   HandlerThread:13780 [handler.py:handle_request():144] handle_request: status_report
+2023-07-20 15:00:40,693 DEBUG   HandlerThread:13780 [handler.py:handle_request():144] handle_request: status_report
+2023-07-20 15:00:45,741 DEBUG   HandlerThread:13780 [handler.py:handle_request():144] handle_request: status_report
+2023-07-20 15:00:50,795 DEBUG   HandlerThread:13780 [handler.py:handle_request():144] handle_request: status_report
+2023-07-20 15:00:55,827 DEBUG   HandlerThread:13780 [handler.py:handle_request():144] handle_request: status_report
+2023-07-20 15:01:00,862 DEBUG   HandlerThread:13780 [handler.py:handle_request():144] handle_request: status_report
+2023-07-20 15:01:05,874 DEBUG   HandlerThread:13780 [handler.py:handle_request():144] handle_request: status_report
+2023-07-20 15:01:10,913 DEBUG   HandlerThread:13780 [handler.py:handle_request():144] handle_request: status_report
+2023-07-20 15:01:15,935 DEBUG   HandlerThread:13780 [handler.py:handle_request():144] handle_request: status_report
+2023-07-20 15:01:20,949 DEBUG   HandlerThread:13780 [handler.py:handle_request():144] handle_request: status_report
+2023-07-20 15:01:25,976 DEBUG   HandlerThread:13780 [handler.py:handle_request():144] handle_request: status_report
+2023-07-20 15:01:30,989 DEBUG   HandlerThread:13780 [handler.py:handle_request():144] handle_request: status_report
+2023-07-20 15:01:36,005 DEBUG   HandlerThread:13780 [handler.py:handle_request():144] handle_request: status_report
+2023-07-20 15:01:41,054 DEBUG   HandlerThread:13780 [handler.py:handle_request():144] handle_request: status_report
+2023-07-20 15:01:46,107 DEBUG   HandlerThread:13780 [handler.py:handle_request():144] handle_request: status_report
+2023-07-20 15:01:51,162 DEBUG   HandlerThread:13780 [handler.py:handle_request():144] handle_request: status_report
+2023-07-20 15:01:56,197 DEBUG   HandlerThread:13780 [handler.py:handle_request():144] handle_request: status_report
+2023-07-20 15:02:01,225 DEBUG   HandlerThread:13780 [handler.py:handle_request():144] handle_request: status_report
+2023-07-20 15:02:06,262 DEBUG   HandlerThread:13780 [handler.py:handle_request():144] handle_request: status_report
+2023-07-20 15:02:11,297 DEBUG   HandlerThread:13780 [handler.py:handle_request():144] handle_request: status_report
+2023-07-20 15:02:16,337 DEBUG   HandlerThread:13780 [handler.py:handle_request():144] handle_request: status_report
+2023-07-20 15:02:21,372 DEBUG   HandlerThread:13780 [handler.py:handle_request():144] handle_request: status_report
+2023-07-20 15:02:26,398 DEBUG   HandlerThread:13780 [handler.py:handle_request():144] handle_request: status_report

@@ -1,0 +1,13 @@
+names:
+- normal
+- wear
+nc: 2
+roboflow:
+  license: CC BY 4.0
+  project: cnc_box
+  url: https://universe.roboflow.com/project-goyvd/cnc_box/dataset/1
+  version: 1
+  workspace: project-goyvd
+test: test/images
+train: train/images
+val: valid/images

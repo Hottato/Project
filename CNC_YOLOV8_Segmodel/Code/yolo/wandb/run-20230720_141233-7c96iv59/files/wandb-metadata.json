@@ -1,0 +1,56 @@
+{
+    "os": "Windows-10-10.0.19045-SP0",
+    "python": "3.9.12",
+    "heartbeatAt": "2023-07-20T05:12:34.172269",
+    "startedAt": "2023-07-20T05:12:33.439269",
+    "docker": null,
+    "cuda": null,
+    "args": [
+        "task=segment",
+        "mode=train",
+        "model=yolov8s-seg.pt",
+        "data=C:\\Users\\31083\\Documents\\GitHub\\Project\\CNC_YOLOV8_Segmodel\\\ucf54\ub4dc\ud30c\uc77c\\yolo\\cnc_box-1/data.yaml",
+        "epochs=20",
+        "imgsz=324"
+    ],
+    "state": "running",
+    "program": "-m __main__",
+    "git": {
+        "remote": "https://github.com/Hottato/Project.git",
+        "commit": "e949e9bfc825deb84369d8e39b3b1b8111b2ec01"
+    },
+    "email": "135087389+Hottato@users.noreply.github.com",
+    "root": "C:/Users/31083/Documents/GitHub/Project",
+    "host": "DESKTOP-BRJ8U09",
+    "username": "31083",
+    "executable": "C:\\Users\\31083\\anaconda3\\envs\\test_envs\\python.exe",
+    "cpu_count": 12,
+    "cpu_count_logical": 24,
+    "cpu_freq": {
+        "current": 3793.0,
+        "min": 0.0,
+        "max": 3793.0
+    },
+    "cpu_freq_per_core": [
+        {
+            "current": 3793.0,
+            "min": 0.0,
+            "max": 3793.0
+        }
+    ],
+    "disk": {
+        "total": 232.14550399780273,
+        "used": 171.6208152770996
+    },
+    "gpu": "NVIDIA GeForce RTX 2070 SUPER",
+    "gpu_count": 1,
+    "gpu_devices": [
+        {
+            "name": "NVIDIA GeForce RTX 2070 SUPER",
+            "memory_total": 8589934592
+        }
+    ],
+    "memory": {
+        "total": 31.914608001708984
+    }
+}

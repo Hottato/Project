@@ -1,0 +1,55 @@
+[34m[1mAMP: [39m[22mrunning Automatic Mixed Precision (AMP) checks with YOLOv8n...
+[34m[1mAMP: [39m[22mchecks passed
+WARNING  imgsz=[324] must be multiple of max stride 32, updating to [352]
+[34m[1moptimizer:[39m[22m SGD(lr=0.01) with parameter groups 66 weight(decay=0.0), 77 weight(decay=0.0005), 76 bias
+[34m[1mtrain: [39m[22mScanning C:\Users\31083\Documents\GitHub\Project\CNC_YOLOV8_Segmodel\Code\yolo\cnc_box-1\train\labels.cache... 90 images, 2 backgrounds, 0 corrupt: 100%|##########| 90/90 [00:00<?, ?it/s]
+[34m[1mval: [39m[22mScanning C:\Users\31083\Documents\GitHub\Project\CNC_YOLOV8_Segmodel\Code\yolo\cnc_box-1\valid\labels.cache... 8 images, 0 backgrounds, 0 corrupt: 100%|##########| 8/8 [00:00<?, ?it/s]
+Plotting labels to runs\segment\train9\labels.jpg...
+Image sizes 352 train, 352 val
+Using 8 dataloader workers
+Logging results to [1mruns\segment\train9
+Starting training for 20 epochs...
+      Epoch    GPU_mem   box_loss   seg_loss   cls_loss   dfl_loss  Instances       Size
+       1/20       1.6G      1.796      7.309      3.939      1.569         49        352: 100%|##########| 6/6 [00:02<00:00,  2.13it/s]
+C:\Users\31083\anaconda3\envs\test_envs\lib\site-packages\torch\optim\lr_scheduler.py:139: UserWarning: Detected call of `lr_scheduler.step()` before `optimizer.step()`. In PyTorch 1.1.0 and later, you should call them in the opposite order: `optimizer.step()` before `lr_scheduler.step()`.  Failure to do this will result in PyTorch skipping the first value of the learning rate schedule. See more details at https://pytorch.org/docs/stable/optim.html#how-to-adjust-learning-rate
+  warnings.warn("Detected call of `lr_scheduler.step()` before `optimizer.step()`. "
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95)     Mask(P          R      mAP50  mAP50-95):   0%|          | 0/1 [00:15<?, ?it/s]
+Traceback (most recent call last):
+  File "C:\Users\31083\anaconda3\envs\test_envs\lib\site-packages\torch\utils\data\dataloader.py", line 1135, in _try_get_data
+    data = self._data_queue.get(timeout=timeout)
+  File "C:\Users\31083\anaconda3\envs\test_envs\lib\queue.py", line 179, in get
+    raise Empty
+_queue.Empty
+The above exception was the direct cause of the following exception:
+Traceback (most recent call last):
+  File "C:\Users\31083\anaconda3\envs\test_envs\lib\runpy.py", line 197, in _run_module_as_main
+    return _run_code(code, main_globals, None,
+  File "C:\Users\31083\anaconda3\envs\test_envs\lib\runpy.py", line 87, in _run_code
+    exec(code, run_globals)
+  File "C:\Users\31083\anaconda3\envs\test_envs\Scripts\yolo.exe\__main__.py", line 7, in <module>
+  File "C:\Users\31083\anaconda3\envs\test_envs\lib\site-packages\ultralytics\yolo\cfg\__init__.py", line 397, in entrypoint
+    getattr(model, mode)(**overrides)  # default args from model
+  File "C:\Users\31083\anaconda3\envs\test_envs\lib\site-packages\ultralytics\yolo\engine\model.py", line 371, in train
+    self.trainer.train()
+  File "C:\Users\31083\anaconda3\envs\test_envs\lib\site-packages\ultralytics\yolo\engine\trainer.py", line 192, in train
+    self._do_train(world_size)
+  File "C:\Users\31083\anaconda3\envs\test_envs\lib\site-packages\ultralytics\yolo\engine\trainer.py", line 369, in _do_train
+    self.metrics, self.fitness = self.validate()
+  File "C:\Users\31083\anaconda3\envs\test_envs\lib\site-packages\ultralytics\yolo\engine\trainer.py", line 475, in validate
+    metrics = self.validator(self)
+  File "C:\Users\31083\anaconda3\envs\test_envs\lib\site-packages\torch\utils\_contextlib.py", line 115, in decorate_context
+    return func(*args, **kwargs)
+  File "C:\Users\31083\anaconda3\envs\test_envs\lib\site-packages\ultralytics\yolo\engine\validator.py", line 151, in __call__
+    for batch_i, batch in enumerate(bar):
+  File "C:\Users\31083\anaconda3\envs\test_envs\lib\site-packages\tqdm\std.py", line 1178, in __iter__
+    for obj in iterable:
+  File "C:\Users\31083\anaconda3\envs\test_envs\lib\site-packages\ultralytics\yolo\data\build.py", line 38, in __iter__
+    yield next(self.iterator)
+  File "C:\Users\31083\anaconda3\envs\test_envs\lib\site-packages\torch\utils\data\dataloader.py", line 633, in __next__
+    data = self._next_data()
+  File "C:\Users\31083\anaconda3\envs\test_envs\lib\site-packages\torch\utils\data\dataloader.py", line 1331, in _next_data
+    idx, data = self._get_data()
+  File "C:\Users\31083\anaconda3\envs\test_envs\lib\site-packages\torch\utils\data\dataloader.py", line 1287, in _get_data
+    success, data = self._try_get_data()
+  File "C:\Users\31083\anaconda3\envs\test_envs\lib\site-packages\torch\utils\data\dataloader.py", line 1148, in _try_get_data
+    raise RuntimeError('DataLoader worker (pid(s) {}) exited unexpectedly'.format(pids_str)) from e

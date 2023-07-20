@@ -1,0 +1,92 @@
+2023-07-20 15:45:05,879 INFO    StreamThr :8980 [internal.py:wandb_internal():86] W&B internal server running at pid: 8980, started at: 2023-07-20 15:45:05.879699
+2023-07-20 15:45:05,879 DEBUG   HandlerThread:8980 [handler.py:handle_request():144] handle_request: status
+2023-07-20 15:45:05,879 INFO    WriterThread:8980 [datastore.py:open_for_write():85] open: C:\Users\31083\Documents\GitHub\Project\CNC_YOLOV8_Segmodel\Code\yolo\wandb\run-20230720_154505-vcameoh3\run-vcameoh3.wandb
+2023-07-20 15:45:05,879 DEBUG   SenderThread:8980 [sender.py:send():375] send: header
+2023-07-20 15:45:05,910 DEBUG   SenderThread:8980 [sender.py:send():375] send: run
+2023-07-20 15:45:06,455 INFO    SenderThread:8980 [dir_watcher.py:__init__():219] watching files in: C:\Users\31083\Documents\GitHub\Project\CNC_YOLOV8_Segmodel\Code\yolo\wandb\run-20230720_154505-vcameoh3\files
+2023-07-20 15:45:06,455 INFO    SenderThread:8980 [sender.py:_start_run_threads():1124] run started: vcameoh3 with start time 1689835505.879699
+2023-07-20 15:45:06,455 DEBUG   HandlerThread:8980 [handler.py:handle_request():144] handle_request: check_version
+2023-07-20 15:45:06,455 DEBUG   SenderThread:8980 [sender.py:send_request():402] send_request: summary_record
+2023-07-20 15:45:06,455 INFO    SenderThread:8980 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-07-20 15:45:06,455 DEBUG   SenderThread:8980 [sender.py:send_request():402] send_request: check_version
+2023-07-20 15:45:06,517 DEBUG   HandlerThread:8980 [handler.py:handle_request():144] handle_request: run_start
+2023-07-20 15:45:06,517 DEBUG   HandlerThread:8980 [system_info.py:__init__():31] System info init
+2023-07-20 15:45:06,517 DEBUG   HandlerThread:8980 [system_info.py:__init__():46] System info init done
+2023-07-20 15:45:06,517 INFO    HandlerThread:8980 [system_monitor.py:start():181] Starting system monitor
+2023-07-20 15:45:06,517 INFO    SystemMonitor:8980 [system_monitor.py:_start():145] Starting system asset monitoring threads
+2023-07-20 15:45:06,517 INFO    HandlerThread:8980 [system_monitor.py:probe():201] Collecting system info
+2023-07-20 15:45:06,532 INFO    SystemMonitor:8980 [interfaces.py:start():190] Started cpu monitoring
+2023-07-20 15:45:06,532 INFO    SystemMonitor:8980 [interfaces.py:start():190] Started disk monitoring
+2023-07-20 15:45:06,532 INFO    SystemMonitor:8980 [interfaces.py:start():190] Started gpu monitoring
+2023-07-20 15:45:06,532 INFO    SystemMonitor:8980 [interfaces.py:start():190] Started memory monitoring
+2023-07-20 15:45:06,539 INFO    SystemMonitor:8980 [interfaces.py:start():190] Started network monitoring
+2023-07-20 15:45:06,555 DEBUG   HandlerThread:8980 [system_info.py:probe():195] Probing system
+2023-07-20 15:45:06,555 DEBUG   HandlerThread:8980 [system_info.py:_probe_git():180] Probing git
+2023-07-20 15:45:06,617 DEBUG   HandlerThread:8980 [system_info.py:_probe_git():188] Probing git done
+2023-07-20 15:45:06,617 DEBUG   HandlerThread:8980 [system_info.py:probe():240] Probing system done
+2023-07-20 15:45:06,617 DEBUG   HandlerThread:8980 [system_monitor.py:probe():210] {'os': 'Windows-10-10.0.19045-SP0', 'python': '3.9.12', 'heartbeatAt': '2023-07-20T06:45:06.555319', 'startedAt': '2023-07-20T06:45:05.869574', 'docker': None, 'cuda': None, 'args': ('task=segment', 'mode=train', 'model=yolov8s-seg.pt', 'data=C:\\Users\\31083\\Documents\\GitHub\\Project\\CNC_YOLOV8_Segmodel\\Code\\yolo\\cnc_box-1/data.yaml', 'epochs=20', 'imgsz=324'), 'state': 'running', 'program': '-m __main__', 'git': {'remote': 'https://github.com/Hottato/Project.git', 'commit': 'e949e9bfc825deb84369d8e39b3b1b8111b2ec01'}, 'email': '135087389+Hottato@users.noreply.github.com', 'root': 'C:/Users/31083/Documents/GitHub/Project', 'host': 'DESKTOP-BRJ8U09', 'username': '31083', 'executable': 'C:\\Users\\31083\\anaconda3\\envs\\test_envs\\python.exe', 'cpu_count': 12, 'cpu_count_logical': 24, 'cpu_freq': {'current': 3793.0, 'min': 0.0, 'max': 3793.0}, 'cpu_freq_per_core': [{'current': 3793.0, 'min': 0.0, 'max': 3793.0}], 'disk': {'total': 232.14550399780273, 'used': 185.15947341918945}, 'gpu': 'NVIDIA GeForce RTX 2070 SUPER', 'gpu_count': 1, 'gpu_devices': [{'name': 'NVIDIA GeForce RTX 2070 SUPER', 'memory_total': 8589934592}], 'memory': {'total': 31.914608001708984}}
+2023-07-20 15:45:06,617 INFO    HandlerThread:8980 [system_monitor.py:probe():211] Finished collecting system info
+2023-07-20 15:45:06,617 INFO    HandlerThread:8980 [system_monitor.py:probe():214] Publishing system info
+2023-07-20 15:45:06,617 DEBUG   HandlerThread:8980 [system_info.py:_save_pip():51] Saving list of pip packages installed into the current environment
+2023-07-20 15:45:06,617 DEBUG   HandlerThread:8980 [system_info.py:_save_pip():67] Saving pip packages done
+2023-07-20 15:45:06,617 DEBUG   HandlerThread:8980 [system_info.py:_save_conda():74] Saving list of conda packages installed into the current environment
+2023-07-20 15:45:07,459 INFO    Thread-17 :8980 [dir_watcher.py:_on_file_created():278] file/dir created: C:\Users\31083\Documents\GitHub\Project\CNC_YOLOV8_Segmodel\Code\yolo\wandb\run-20230720_154505-vcameoh3\files\conda-environment.yaml
+2023-07-20 15:45:07,459 INFO    Thread-17 :8980 [dir_watcher.py:_on_file_created():278] file/dir created: C:\Users\31083\Documents\GitHub\Project\CNC_YOLOV8_Segmodel\Code\yolo\wandb\run-20230720_154505-vcameoh3\files\wandb-summary.json
+2023-07-20 15:45:07,459 INFO    Thread-17 :8980 [dir_watcher.py:_on_file_created():278] file/dir created: C:\Users\31083\Documents\GitHub\Project\CNC_YOLOV8_Segmodel\Code\yolo\wandb\run-20230720_154505-vcameoh3\files\requirements.txt
+2023-07-20 15:45:15,257 DEBUG   HandlerThread:8980 [system_info.py:_save_conda():86] Saving conda packages done
+2023-07-20 15:45:15,257 INFO    HandlerThread:8980 [system_monitor.py:probe():216] Finished publishing system info
+2023-07-20 15:45:15,257 DEBUG   HandlerThread:8980 [handler.py:handle_request():144] handle_request: status_report
+2023-07-20 15:45:15,257 DEBUG   HandlerThread:8980 [handler.py:handle_request():144] handle_request: keepalive
+2023-07-20 15:45:15,257 DEBUG   SenderThread:8980 [sender.py:send():375] send: files
+2023-07-20 15:45:15,257 INFO    SenderThread:8980 [sender.py:_save_file():1378] saving file wandb-metadata.json with policy now
+2023-07-20 15:45:15,257 DEBUG   HandlerThread:8980 [handler.py:handle_request():144] handle_request: stop_status
+2023-07-20 15:45:15,257 DEBUG   SenderThread:8980 [sender.py:send_request():402] send_request: stop_status
+2023-07-20 15:45:15,490 DEBUG   SenderThread:8980 [sender.py:send():375] send: telemetry
+2023-07-20 15:45:15,526 INFO    Thread-17 :8980 [dir_watcher.py:_on_file_modified():295] file/dir modified: C:\Users\31083\Documents\GitHub\Project\CNC_YOLOV8_Segmodel\Code\yolo\wandb\run-20230720_154505-vcameoh3\files\conda-environment.yaml
+2023-07-20 15:45:15,526 INFO    Thread-17 :8980 [dir_watcher.py:_on_file_created():278] file/dir created: C:\Users\31083\Documents\GitHub\Project\CNC_YOLOV8_Segmodel\Code\yolo\wandb\run-20230720_154505-vcameoh3\files\wandb-metadata.json
+2023-07-20 15:45:15,526 INFO    Thread-17 :8980 [dir_watcher.py:_on_file_created():278] file/dir created: C:\Users\31083\Documents\GitHub\Project\CNC_YOLOV8_Segmodel\Code\yolo\wandb\run-20230720_154505-vcameoh3\files\output.log
+2023-07-20 15:45:15,949 INFO    wandb-upload_0:8980 [upload_job.py:push():137] Uploaded file C:\Users\31083\AppData\Local\Temp\tmpsc5kmvc1wandb\8tizq511-wandb-metadata.json
+2023-07-20 15:45:17,369 DEBUG   HandlerThread:8980 [handler.py:handle_request():144] handle_request: status_report
+2023-07-20 15:45:17,548 INFO    Thread-17 :8980 [dir_watcher.py:_on_file_modified():295] file/dir modified: C:\Users\31083\Documents\GitHub\Project\CNC_YOLOV8_Segmodel\Code\yolo\wandb\run-20230720_154505-vcameoh3\files\output.log
+2023-07-20 15:45:22,404 DEBUG   HandlerThread:8980 [handler.py:handle_request():144] handle_request: status_report
+2023-07-20 15:45:27,448 DEBUG   HandlerThread:8980 [handler.py:handle_request():144] handle_request: status_report
+2023-07-20 15:45:30,259 DEBUG   HandlerThread:8980 [handler.py:handle_request():144] handle_request: stop_status
+2023-07-20 15:45:30,259 DEBUG   SenderThread:8980 [sender.py:send_request():402] send_request: stop_status
+2023-07-20 15:45:32,485 DEBUG   HandlerThread:8980 [handler.py:handle_request():144] handle_request: status_report
+2023-07-20 15:45:37,517 DEBUG   HandlerThread:8980 [handler.py:handle_request():144] handle_request: status_report
+2023-07-20 15:45:38,746 INFO    Thread-17 :8980 [dir_watcher.py:_on_file_modified():295] file/dir modified: C:\Users\31083\Documents\GitHub\Project\CNC_YOLOV8_Segmodel\Code\yolo\wandb\run-20230720_154505-vcameoh3\files\config.yaml
+2023-07-20 15:45:42,819 DEBUG   HandlerThread:8980 [handler.py:handle_request():144] handle_request: status_report
+2023-07-20 15:45:45,256 DEBUG   HandlerThread:8980 [handler.py:handle_request():144] handle_request: stop_status
+2023-07-20 15:45:45,256 DEBUG   SenderThread:8980 [sender.py:send_request():402] send_request: stop_status
+2023-07-20 15:45:48,478 DEBUG   HandlerThread:8980 [handler.py:handle_request():144] handle_request: status_report
+2023-07-20 15:45:53,489 DEBUG   HandlerThread:8980 [handler.py:handle_request():144] handle_request: status_report
+2023-07-20 15:45:58,502 DEBUG   HandlerThread:8980 [handler.py:handle_request():144] handle_request: status_report
+2023-07-20 15:46:00,276 DEBUG   HandlerThread:8980 [handler.py:handle_request():144] handle_request: stop_status
+2023-07-20 15:46:00,276 DEBUG   SenderThread:8980 [sender.py:send_request():402] send_request: stop_status
+2023-07-20 15:46:03,801 DEBUG   HandlerThread:8980 [handler.py:handle_request():144] handle_request: status_report
+2023-07-20 15:46:03,970 INFO    Thread-17 :8980 [dir_watcher.py:_on_file_modified():295] file/dir modified: C:\Users\31083\Documents\GitHub\Project\CNC_YOLOV8_Segmodel\Code\yolo\wandb\run-20230720_154505-vcameoh3\files\output.log
+2023-07-20 15:46:05,980 INFO    Thread-17 :8980 [dir_watcher.py:_on_file_modified():295] file/dir modified: C:\Users\31083\Documents\GitHub\Project\CNC_YOLOV8_Segmodel\Code\yolo\wandb\run-20230720_154505-vcameoh3\files\output.log
+2023-07-20 15:46:06,547 DEBUG   SystemMonitor:8980 [system_monitor.py:_start():159] Starting system metrics aggregation loop
+2023-07-20 15:46:06,548 DEBUG   SenderThread:8980 [sender.py:send():375] send: stats
+2023-07-20 15:46:07,996 INFO    Thread-17 :8980 [dir_watcher.py:_on_file_modified():295] file/dir modified: C:\Users\31083\Documents\GitHub\Project\CNC_YOLOV8_Segmodel\Code\yolo\wandb\run-20230720_154505-vcameoh3\files\output.log
+2023-07-20 15:46:08,818 DEBUG   HandlerThread:8980 [handler.py:handle_request():144] handle_request: status_report
+2023-07-20 15:46:08,828 DEBUG   HandlerThread:8980 [handler.py:handle_request():144] handle_request: partial_history
+2023-07-20 15:46:08,828 DEBUG   HandlerThread:8980 [handler.py:handle_request():144] handle_request: partial_history
+2023-07-20 15:46:10,021 INFO    Thread-17 :8980 [dir_watcher.py:_on_file_modified():295] file/dir modified: C:\Users\31083\Documents\GitHub\Project\CNC_YOLOV8_Segmodel\Code\yolo\wandb\run-20230720_154505-vcameoh3\files\output.log
+2023-07-20 15:46:13,879 DEBUG   HandlerThread:8980 [handler.py:handle_request():144] handle_request: status_report
+2023-07-20 15:46:15,284 DEBUG   HandlerThread:8980 [handler.py:handle_request():144] handle_request: stop_status
+2023-07-20 15:46:15,284 DEBUG   SenderThread:8980 [sender.py:send_request():402] send_request: stop_status
+2023-07-20 15:46:19,506 DEBUG   HandlerThread:8980 [handler.py:handle_request():144] handle_request: status_report
+2023-07-20 15:46:24,882 DEBUG   HandlerThread:8980 [handler.py:handle_request():144] handle_request: status_report
+2023-07-20 15:46:26,150 INFO    Thread-17 :8980 [dir_watcher.py:_on_file_modified():295] file/dir modified: C:\Users\31083\Documents\GitHub\Project\CNC_YOLOV8_Segmodel\Code\yolo\wandb\run-20230720_154505-vcameoh3\files\output.log
+2023-07-20 15:46:26,914 INFO    memory    :8980 [interfaces.py:monitor():140] Process proc.memory.rssMB has exited.
+2023-07-20 15:46:26,914 DEBUG   SystemMonitor:8980 [system_monitor.py:_start():166] Finished system metrics aggregation loop
+2023-07-20 15:46:26,914 DEBUG   SystemMonitor:8980 [system_monitor.py:_start():170] Publishing last batch of metrics
+2023-07-20 15:46:26,914 DEBUG   SenderThread:8980 [sender.py:send():375] send: stats
+2023-07-20 15:46:29,924 DEBUG   HandlerThread:8980 [handler.py:handle_request():144] handle_request: status_report
+2023-07-20 15:46:34,962 DEBUG   HandlerThread:8980 [handler.py:handle_request():144] handle_request: status_report
+2023-07-20 15:46:39,983 DEBUG   HandlerThread:8980 [handler.py:handle_request():144] handle_request: status_report
+2023-07-20 15:46:45,018 DEBUG   HandlerThread:8980 [handler.py:handle_request():144] handle_request: status_report
+2023-07-20 15:46:50,032 DEBUG   HandlerThread:8980 [handler.py:handle_request():144] handle_request: status_report
+2023-07-20 15:46:55,064 DEBUG   HandlerThread:8980 [handler.py:handle_request():144] handle_request: status_report
+2023-07-20 15:47:00,099 DEBUG   HandlerThread:8980 [handler.py:handle_request():144] handle_request: status_report

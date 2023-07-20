@@ -1,0 +1,45 @@
+WARNING  imgsz=[324] must be multiple of max stride 32, updating to [352]
+[34m[1moptimizer:[39m[22m SGD(lr=0.01) with parameter groups 66 weight(decay=0.0), 77 weight(decay=0.0005), 76 bias
+[34m[1mtrain: [39m[22mScanning C:\Users\31083\Documents\GitHub\Project\CNC_YOLOV8_Segmodel\코드파일\yolo\cnc_box-1\train\labels... 90 images, 2 backgrounds, 0 corrupt: 100%|##########| 90/90 [00:00<00:00, 754.94it/s]
+[34m[1mtrain: [39m[22mNew cache created: C:\Users\31083\Documents\GitHub\Project\CNC_YOLOV8_Segmodel\\yolo\cnc_box-1\train\labels.cache
+[34m[1mval: [39m[22mScanning C:\Users\31083\Documents\GitHub\Project\CNC_YOLOV8_Segmodel\코드파일\yolo\cnc_box-1\valid\labels... 8 images, 0 backgrounds, 0 corrupt: 100%|##########| 8/8 [00:00<00:00, 538.34it/s]
+[34m[1mval: [39m[22mNew cache created: C:\Users\31083\Documents\GitHub\Project\CNC_YOLOV8_Segmodel\\yolo\cnc_box-1\valid\labels.cache
+Plotting labels to runs\segment\train4\labels.jpg...
+Image sizes 352 train, 352 val
+Using 0 dataloader workers
+Logging results to [1mruns\segment\train4
+Starting training for 20 epochs...
+      Epoch    GPU_mem   box_loss   seg_loss   cls_loss   dfl_loss  Instances       Size
+  0%|          | 0/6 [00:00<?, ?it/s]
+Traceback (most recent call last):
+  File "C:\Users\31083\anaconda3\envs\test_envs\lib\runpy.py", line 197, in _run_module_as_main
+    return _run_code(code, main_globals, None,
+  File "C:\Users\31083\anaconda3\envs\test_envs\lib\runpy.py", line 87, in _run_code
+    exec(code, run_globals)
+  File "C:\Users\31083\anaconda3\envs\test_envs\Scripts\yolo.exe\__main__.py", line 7, in <module>
+  File "C:\Users\31083\anaconda3\envs\test_envs\lib\site-packages\ultralytics\yolo\cfg\__init__.py", line 397, in entrypoint
+    getattr(model, mode)(**overrides)  # default args from model
+  File "C:\Users\31083\anaconda3\envs\test_envs\lib\site-packages\ultralytics\yolo\engine\model.py", line 371, in train
+    self.trainer.train()
+  File "C:\Users\31083\anaconda3\envs\test_envs\lib\site-packages\ultralytics\yolo\engine\trainer.py", line 192, in train
+    self._do_train(world_size)
+  File "C:\Users\31083\anaconda3\envs\test_envs\lib\site-packages\ultralytics\yolo\engine\trainer.py", line 311, in _do_train
+    for i, batch in pbar:
+  File "C:\Users\31083\anaconda3\envs\test_envs\lib\site-packages\tqdm\std.py", line 1178, in __iter__
+    for obj in iterable:
+  File "C:\Users\31083\anaconda3\envs\test_envs\lib\site-packages\ultralytics\yolo\data\build.py", line 38, in __iter__
+    yield next(self.iterator)
+  File "C:\Users\31083\anaconda3\envs\test_envs\lib\site-packages\torch\utils\data\dataloader.py", line 633, in __next__
+    data = self._next_data()
+  File "C:\Users\31083\anaconda3\envs\test_envs\lib\site-packages\torch\utils\data\dataloader.py", line 677, in _next_data
+    data = self._dataset_fetcher.fetch(index)  # may raise StopIteration
+  File "C:\Users\31083\anaconda3\envs\test_envs\lib\site-packages\torch\utils\data\_utils\fetch.py", line 51, in fetch
+    data = [self.dataset[idx] for idx in possibly_batched_index]
+  File "C:\Users\31083\anaconda3\envs\test_envs\lib\site-packages\torch\utils\data\_utils\fetch.py", line 51, in <listcomp>
+    data = [self.dataset[idx] for idx in possibly_batched_index]
+  File "C:\Users\31083\anaconda3\envs\test_envs\lib\site-packages\ultralytics\yolo\data\base.py", line 234, in __getitem__
+    return self.transforms(self.get_image_and_label(index))
+  File "C:\Users\31083\anaconda3\envs\test_envs\lib\site-packages\ultralytics\yolo\data\base.py", line 240, in get_image_and_label
+    label['img'], label['ori_shape'], label['resized_shape'] = self.load_image(index)
+  File "C:\Users\31083\anaconda3\envs\test_envs\lib\site-packages\ultralytics\yolo\data\base.py", line 147, in load_image
+    raise FileNotFoundError(f'Image Not Found {f}')

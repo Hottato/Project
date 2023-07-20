@@ -1,0 +1,82 @@
+WARNING  imgsz=[324] must be multiple of max stride 32, updating to [352]
+[34m[1moptimizer:[39m[22m SGD(lr=0.01) with parameter groups 66 weight(decay=0.0), 77 weight(decay=0.0005), 76 bias
+[34m[1mtrain: [39m[22mScanning C:\Users\31083\Desktop\cnc\yolo\cnc_box-1\train\labels... 90 images, 2 backgrounds, 0 corrupt: 100%|##########| 90/90 [00:00<00:00, 887.31it/s]
+[34m[1mtrain: [39m[22mNew cache created: C:\Users\31083\Desktop\cnc\yolo\cnc_box-1\train\labels.cache
+[34m[1mval: [39m[22mScanning C:\Users\31083\Desktop\cnc\yolo\cnc_box-1\valid\labels... 8 images, 0 backgrounds, 0 corrupt: 100%|##########| 8/8 [00:00<00:00, 511.92it/s]
+[34m[1mval: [39m[22mNew cache created: C:\Users\31083\Desktop\cnc\yolo\cnc_box-1\valid\labels.cache
+Plotting labels to runs\segment\train\labels.jpg...
+Image sizes 352 train, 352 val
+Using 0 dataloader workers
+Logging results to [1mruns\segment\train
+Starting training for 20 epochs...
+      Epoch    GPU_mem   box_loss   seg_loss   cls_loss   dfl_loss  Instances       Size
+
+
+
+
+
+       1/20         0G      1.909      5.777      3.938      1.663         41        352: 100%|##########| 6/6 [00:22<00:00,  3.76s/it]
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95)     Mask(P          R      mAP50  mAP50-95): 100%|##########| 1/1 [00:00<00:00,  1.32it/s]
+                   all          8         18      0.701      0.115     0.0535     0.0535    0.00211      0.377    0.00271   0.000756
+      Epoch    GPU_mem   box_loss   seg_loss   cls_loss   dfl_loss  Instances       Size
+
+
+
+
+
+
+       2/20         0G      1.733      4.149      3.488      1.517         41        352: 100%|##########| 6/6 [00:21<00:00,  3.62s/it]
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95)     Mask(P          R      mAP50  mAP50-95): 100%|##########| 1/1 [00:00<00:00,  1.38it/s]
+                   all          8         18      0.523      0.415      0.474      0.231      0.331        0.3       0.38      0.124
+      Epoch    GPU_mem   box_loss   seg_loss   cls_loss   dfl_loss  Instances       Size
+
+
+
+
+
+       3/20         0G       1.51      2.731      2.452      1.423         37        352: 100%|##########| 6/6 [00:21<00:00,  3.63s/it]
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95)     Mask(P          R      mAP50  mAP50-95): 100%|##########| 1/1 [00:00<00:00,  1.37it/s]
+                   all          8         18      0.577      0.746      0.725      0.292      0.782      0.462      0.638      0.191
+      Epoch    GPU_mem   box_loss   seg_loss   cls_loss   dfl_loss  Instances       Size
+
+
+
+
+
+       4/20         0G      1.464      2.617      2.075      1.347         42        352: 100%|##########| 6/6 [00:21<00:00,  3.64s/it]
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95)     Mask(P          R      mAP50  mAP50-95): 100%|##########| 1/1 [00:00<00:00,  1.36it/s]
+                   all          8         18      0.848      0.544      0.734      0.358      0.651      0.492      0.504      0.138
+      Epoch    GPU_mem   box_loss   seg_loss   cls_loss   dfl_loss  Instances       Size
+
+
+
+
+
+       5/20         0G      1.317      2.287      1.788      1.277         23        352: 100%|##########| 6/6 [00:21<00:00,  3.61s/it]
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95)     Mask(P          R      mAP50  mAP50-95): 100%|##########| 1/1 [00:00<00:00,  1.46it/s]
+                   all          8         18      0.412      0.862      0.641      0.343       0.44      0.446      0.334      0.166
+      Epoch    GPU_mem   box_loss   seg_loss   cls_loss   dfl_loss  Instances       Size
+
+
+
+
+
+       6/20         0G      1.237       2.14      1.497      1.227         56        352: 100%|##########| 6/6 [00:21<00:00,  3.66s/it]
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95)     Mask(P          R      mAP50  mAP50-95): 100%|##########| 1/1 [00:00<00:00,  1.48it/s]
+                   all          8         18      0.665       0.66      0.728      0.385      0.652      0.622      0.661      0.228
+Traceback (most recent call last):
+  File "C:\Users\31083\anaconda3\envs\test_envs\lib\runpy.py", line 197, in _run_module_as_main
+    return _run_code(code, main_globals, None,
+  File "C:\Users\31083\anaconda3\envs\test_envs\lib\runpy.py", line 87, in _run_code
+    exec(code, run_globals)
+  File "C:\Users\31083\Anaconda3\envs\test_envs\Scripts\yolo.exe\__main__.py", line 7, in <module>
+  File "C:\Users\31083\anaconda3\envs\test_envs\lib\site-packages\ultralytics\yolo\cfg\__init__.py", line 397, in entrypoint
+    getattr(model, mode)(**overrides)  # default args from model
+  File "C:\Users\31083\anaconda3\envs\test_envs\lib\site-packages\ultralytics\yolo\engine\model.py", line 371, in train
+    self.trainer.train()
+  File "C:\Users\31083\anaconda3\envs\test_envs\lib\site-packages\ultralytics\yolo\engine\trainer.py", line 192, in train
+    self._do_train(world_size)
+  File "C:\Users\31083\anaconda3\envs\test_envs\lib\site-packages\ultralytics\yolo\engine\trainer.py", line 370, in _do_train
+    self.save_metrics(metrics={**self.label_loss_items(self.tloss), **self.metrics, **self.lr})
+  File "C:\Users\31083\anaconda3\envs\test_envs\lib\site-packages\ultralytics\yolo\engine\trainer.py", line 540, in save_metrics
+    with open(self.csv, 'a') as f:
