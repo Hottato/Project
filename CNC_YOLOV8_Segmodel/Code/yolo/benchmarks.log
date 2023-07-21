@@ -1,0 +1,15 @@
+
+Benchmarks complete for best.pt on coco8-seg.yaml at imgsz=352 (111.66s)
+                   Format Status❔  Size (MB)  metrics/mAP50-95(M)  Inference time (ms/im)
+0                 PyTorch       ✅       22.7               0.0002                   31.56
+1             TorchScript       ✅       45.3               0.0002                    8.04
+2                    ONNX       ✅       45.0               0.0002                    8.35
+3                OpenVINO       ❌        0.0                  NaN                     NaN
+4                TensorRT       ❌        0.0                  NaN                     NaN
+5                  CoreML       ❌        0.0                  NaN                     NaN
+6   TensorFlow SavedModel       ❌        0.0                  NaN                     NaN
+7     TensorFlow GraphDef       ❎       45.1                  NaN                     NaN
+8         TensorFlow Lite       ❌        0.0                  NaN                     NaN
+9     TensorFlow Edge TPU       ❌        0.0                  NaN                     NaN
+10          TensorFlow.js       ❌        0.0                  NaN                     NaN
+11           PaddlePaddle       ❌        0.0                  NaN                     NaN
